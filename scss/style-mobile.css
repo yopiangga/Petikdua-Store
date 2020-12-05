@@ -1,6 +1,10 @@
 @media only screen and (max-width: 567px) {
+  @font-face {
+    font-family: "Poppins";
+    src: url("../font/poppins/Poppins-Regular.ttf");
+  }
   body {
-    font-family: nunito, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Poppins";
   }
   nav {
     width: 100%;
@@ -84,7 +88,6 @@
   nav .content .menu ul li a {
     text-decoration: none;
     color: #534741;
-    font-family: nunito, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 16px;
     font-weight: 500;
     width: 100%;
@@ -147,7 +150,6 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    font-family: nunito;
     color: white;
     position: relative;
     top: -10px;
@@ -197,13 +199,11 @@
   }
   .home-intro .slide-1 .content h6 {
     text-align: center;
-    font-family: Swis721 Cn BT;
     font-size: 20px;
     margin-bottom: 20px;
   }
   .home-intro .slide-1 .content h2 {
     text-align: center;
-    font-family: Montserrat;
     font-size: 50px;
     margin-bottom: 10px;
     font-weight: 600;
@@ -216,7 +216,6 @@
   }
   .home-intro .slide-1 .content .btn-shop {
     text-align: center;
-    font-family: nunito, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding-right: 35px;
     padding-left: 35px;
     height: 45px;
@@ -311,7 +310,6 @@
   }
   .home-category .content .title h2 {
     font-size: 36px;
-    font-family: Montserrat;
     margin-bottom: 10px;
     font-weight: 500;
   }
@@ -325,7 +323,6 @@
     text-align: left;
     font-size: 16px;
     line-height: 28px;
-    font-family: nunito, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   .home-category .content .body {
     width: 100%;
@@ -368,7 +365,6 @@
         -ms-flex-align: center;
             align-items: center;
     color: #333333;
-    font-family: nunito, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   .home-category .content .body .category .category-body h5 {
     margin-bottom: 30px;
@@ -412,7 +408,6 @@
         -ms-flex-pack: center;
             justify-content: center;
     color: #333333;
-    font-family: nunito, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   .home-why .bg-why .content {
     width: 90%;
@@ -636,7 +631,6 @@
   }
   .home-product .content .title h2 {
     font-size: 40px;
-    font-family: Montserrat;
     margin-bottom: 10px;
     font-weight: 500;
   }
@@ -811,7 +805,6 @@
   }
   .home-blog .content .title h2 {
     font-size: 40px;
-    font-family: Montserrat;
     margin-bottom: 10px;
     font-weight: 500;
   }
@@ -1172,7 +1165,6 @@
   }
   .section-intro .content h2 {
     text-align: center;
-    font-family: Montserrat;
     font-size: 40px;
     margin-bottom: 10px;
   }
@@ -1495,7 +1487,6 @@
   }
   .products-product .content .title h2 {
     font-size: 36px;
-    font-family: Montserrat;
     margin-bottom: 10px;
   }
   .products-product .content .title h6 {

@@ -1,6 +1,11 @@
 
 @media only screen and (max-width: 567px) {
 
+    @font-face {
+        font-family: "Poppins";
+        src: url('../font/poppins/Poppins-Regular.ttf');
+    }
+
 $color-primary  : #8EB359;
 $color-brown    : #534741;
 $color-secondary: #333333;
@@ -9,8 +14,14 @@ $color-gray     : #7a7a7a;
 $color-light    : #F3F2F0;
 $color-light2   : #F8F7F7;
 
+$font-nunito : nunito, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+$font-verdana : Verdana, Geneva, Tahoma, sans-serif;
+$font-vivaldi : vivaldi;
+
+$font-poppins : 'Poppins';
+
 body {
-    font-family: nunito, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: $font-poppins;
 }
 
 nav {
@@ -66,7 +77,6 @@ nav {
                     a {
                         text-decoration: none;
                         color: $color-brown;
-                        font-family: nunito, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                         font-size: 16px;
                         font-weight: 500;
                         width: 100%;
@@ -117,7 +127,6 @@ nav {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                font-family: nunito;
                 color: white;
                 position: relative;
                 top: -10px;
@@ -160,26 +169,23 @@ nav {
             text-align: center;
             h6 {
                 text-align: center;
-                font-family: Swis721 Cn BT;
                 font-size: 20px;
                 margin-bottom: 20px;
             }
             h2 {
                 text-align: center;
-                font-family: Montserrat;
                 font-size: 50px;
                 margin-bottom: 10px;
                 font-weight: 600;
             }
             p {
                 text-align: center;
-                font-family: vivaldi;
+                font-family: $font-vivaldi;
                 font-size: 24px;
                 margin-bottom: 40px;
             }
             .btn-shop {
                 text-align: center;
-                font-family: nunito, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                 padding-right: 35px;
                 padding-left: 35px;
                 height: 45px;
@@ -252,13 +258,12 @@ nav {
             margin-bottom: 30px;
             h2 {
                 font-size: 36px;
-                font-family: Montserrat;
                 margin-bottom: 10px;
                 font-weight: 500;
             }
             h6 {
                 font-size: 18px;
-                font-family: vivaldi;
+                font-family: $font-vivaldi;
                 color:  $color-primary;
                 margin-bottom: 20px;
             }
@@ -266,7 +271,6 @@ nav {
                 text-align: left;
                 font-size: 16px;
                 line-height: 28px;
-                font-family: nunito, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             }
         }
 
@@ -291,7 +295,6 @@ nav {
                     flex-direction: column;
                     align-items: center;
                     color: $color-secondary;
-                    font-family: nunito, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                     h5 {
                         margin-bottom: 30px;
                         font-weight: 500;
@@ -334,7 +337,6 @@ nav {
         display: flex;
         justify-content: center;
         color: $color-secondary;
-        font-family: nunito, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         .content {
             width: 90%;
             display: flex;
@@ -396,7 +398,7 @@ nav {
                     position: relative;
                     top: 50px;
                     h2 {
-                        font-family: vivaldi;
+                        font-family: $font-vivaldi;
                         font-size: 75px;
                         font-weight: 500;
                         text-align: left;
@@ -404,7 +406,7 @@ nav {
                         font-weight: 500;
                     }
                     h3 {
-                        font-family: vivaldi;
+                        font-family: $font-vivaldi;
                         font-size: 45px;
                         text-align: center;
                         margin-top: -5px;
@@ -491,13 +493,12 @@ nav {
             align-items: center;
             h2 {
                 font-size: 40px;
-                font-family: Montserrat;
                 margin-bottom: 10px;
                 font-weight: 500;
             }
             h6 {
                 font-size: 18px;
-                font-family: vivaldi;
+                font-family: $font-vivaldi;
                 color:  $color-primary;
                 margin-bottom: 20px;
             }
@@ -641,13 +642,12 @@ nav {
             margin-top: 150px;
             h2 {
                 font-size: 40px;
-                font-family: Montserrat;
                 margin-bottom: 10px;
                 font-weight: 500;
             }
             h6 {
                 font-size: 18px;
-                font-family: vivaldi;
+                font-family: $font-vivaldi;
                 color:  $color-primary;
                 margin-bottom: 20px;
             }
@@ -685,7 +685,7 @@ nav {
                         padding-right: 20px;
                         color: $color-secondary;
                         h6 {
-                            font-family: vivaldi;
+                            font-family: $font-vivaldi;
                             margin-bottom: 20px;
                         }
                         h3 {
@@ -729,7 +729,7 @@ nav {
                         padding-right: 20px;
                         padding-left: 20px;
                         h6 {
-                            font-family: vivaldi;
+                            font-family: $font-vivaldi;
                             margin-bottom: 14px;
                         }
                         h3 {
@@ -937,13 +937,12 @@ nav {
         justify-content: center;
         h2 {
             text-align: center;
-            font-family: Montserrat;
             font-size: 40px;
             margin-bottom: 10px;
         }
         p {
             text-align: center;
-            font-family: vivaldi;
+            font-family: $font-vivaldi;
             font-size: 20px;
             margin-bottom: 40px;
             span {
@@ -1002,7 +1001,7 @@ nav {
                     h6 {
                         color: $color-primary;
                         font-size: 18px;
-                        font-family: vivaldi;
+                        font-family: $font-vivaldi;
                     }
                 }
                 .body {
@@ -1095,7 +1094,7 @@ nav {
                     span {
                         font-size: 100px;
                         color: $color-primary;
-                        font-family: vivaldi;
+                        font-family: $font-vivaldi;
                     }
                     p {
                         margin-top: -50px;
@@ -1160,12 +1159,11 @@ nav {
             align-items: center;
             h2 {
                 font-size: 36px;
-                font-family: Montserrat;
                 margin-bottom: 10px;
             }
             h6 {
                 font-size: 18px;
-                font-family: vivaldi;
+                font-family: $font-vivaldi;
                 color:  $color-primary;
                 margin-bottom: 20px;
             }
@@ -1351,7 +1349,7 @@ nav {
                     span {
                         font-size: 100px;
                         color: $color-primary;
-                        font-family: vivaldi;
+                        font-family: $font-vivaldi;
                     }
                     p {
                         margin-top: -50px;
