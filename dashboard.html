@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="scss/style-tab.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="js/aos/aos.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+
 </head>
 <body>
 
@@ -34,18 +36,18 @@
                 <div class="search">
                     <i data-feather="search" stroke="#534741"></i>
                 </div>
-                <div class="like">
-                    <i data-feather="heart" stroke="#534741"></i>
-                    <div class="notif">
-                        <p>5</p>
-                    </div>
-                </div>
+                
                 <div class="cart">
                     <i data-feather="shopping-cart" stroke="#534741"></i>
                     <div class="notif">
                         <p>5</p>
                     </div>
                 </div>
+
+                <div class="user">
+                    <i data-feather="user" stroke="#534741"></i>
+                </div>
+                
             </div>
         </div>
     </nav>
@@ -68,18 +70,18 @@
                 <div class="search">
                     <i data-feather="search" stroke="#534741"></i>
                 </div>
-                <div class="like">
-                    <i data-feather="heart" stroke="#534741"></i>
-                    <div class="notif">
-                        <p>5</p>
-                    </div>
-                </div>
+                
                 <div class="cart">
                     <i data-feather="shopping-cart" stroke="#534741"></i>
                     <div class="notif">
                         <p>5</p>
                     </div>
                 </div>
+
+                <div class="user">
+                    <i data-feather="user" stroke="#534741"></i>
+                </div>
+
             </div>
         </div>
     </nav>
@@ -91,11 +93,22 @@
                 <i data-feather="chevron-left"></i>
             </div>
         </div>
-        <div class="slide-1">
+        <div class="slide slide-1 active">
             <div class="content">
                 <h6>PETIKDUA - 2020</h6>
                 <h2>FOOD STORE</h2>
-                <p>Organie product grown with love</p>
+                <p>1 Organie product grown with love</p>
+                <button class="btn-shop">SHOP NOW</button>
+            </div>
+            <div class="icon-down">
+                <div class="circle"></div>
+            </div>
+        </div>
+        <div class="slide slide-2">
+            <div class="content">
+                <h6>PETIKDUA - 2020</h6>
+                <h2>FOOD STORE</h2>
+                <p>2 Organie product grown with love</p>
                 <button class="btn-shop">SHOP NOW</button>
             </div>
             <div class="icon-down">
@@ -119,7 +132,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A nesciunt reiciendis unde iste, harum, autem nam odit ipsum doloribus quae dolorum veritatis. Debitis quam quidem, amet praesentium dolorem velit recusandae.</p>
             </div>
             <div class="body">
-                <div class="category category-1" data-aos="fade-up">
+                <div class="category category-1" data-aos="fade-up" data-aos-duration="400">
                     <div class="category-img">
                         <img src="/images/fruit.png" alt="">
                     </div>
@@ -128,7 +141,7 @@
                         <h6>(9 items)</h6>
                     </div>
                 </div>
-                <div class="category category-2">
+                <div class="category category-2" data-aos="fade-up" data-aos-duration="600">
                     <div class="category-img">
                         <img src="/images/vegetable.png" alt="">
                     </div>
@@ -137,7 +150,7 @@
                         <h6>(9 items)</h6>
                     </div>
                 </div>
-                <div class="category category-3">
+                <div class="category category-3" data-aos="fade-up" data-aos-duration="800">
                     <div class="category-img">
                         <img src="/images/seafood.png" alt="">
                     </div>
@@ -146,7 +159,7 @@
                         <h6>(9 items)</h6>
                     </div>
                 </div>
-                <div class="category category-4">
+                <div class="category category-4" data-aos="fade-up" data-aos-duration="1000">
                     <div class="category-img">
                         <img src="/images/garlic.png" alt="">
                     </div>
@@ -155,7 +168,7 @@
                         <h6>(9 items)</h6>
                     </div>
                 </div>
-                <div class="category category-5">
+                <div class="category category-5" data-aos="fade-up" data-aos-duration="1200">
                     <div class="category-img">
                         <img src="/images/meet.png" alt="">
                     </div>
@@ -188,11 +201,11 @@
                     </div>
                 </div>
                 <div class="content-left">
-                    <div class="card-content card-content-1" data-aos="flip-right">
+                    <div class="card-content card-content-1" data-aos="flip-right" data-aos-duration="400">
                         <h4>Eat More Healthfully</h4>
                         <p>Obtaining the recommended daily fruits and vegetables</p>
                     </div>
-                    <div class="card-content card-content-2" data-aos="flip-right">
+                    <div class="card-content card-content-2" data-aos="flip-right" data-aos-duration="800">
                         <h4>Eat More Healthfully</h4>
                         <p>Obtaining the recommended daily fruits and vegetables</p>
                     </div>
@@ -208,11 +221,11 @@
                     </div>
                 </div>
                 <div class="content-right">
-                    <div class="card-content card-content-2" data-aos="flip-left">
+                    <div class="card-content card-content-2" data-aos="flip-left" data-aos-duration="600">
                         <h4>Eat More Healthfully</h4>
                         <p>Obtaining the recommended daily fruits and vegetables</p>
                     </div>
-                    <div class="card-content card-content-1" data-aos="flip-left">
+                    <div class="card-content card-content-1" data-aos="flip-left" data-aos-duration="1000">
                         <h4>Eat More Healthfully</h4>
                         <p>Obtaining the recommended daily fruits and vegetables</p>
                     </div>
@@ -236,20 +249,19 @@
                     <button class="btn-fruits">Fruits</button>
                     <button class="btn-vegetables">Vegetables</button>
                     <button class="btn-garlics">Garlics</button>
-                    <button class="btn-Seafoods">SeaFoods</button>
+                    <button class="btn-seafoods">SeaFoods</button>
                     <button class="btn-meets">Meets</button>
                 </div>
             </div>
             <div class="body">
-
-                <div class="produk">
+                <div class="produk fruits" data-aos="fade-up" data-aos-duration="400">
                     <div class="produk-img">
                         <img src="/images/grape.png" alt="">
                         <div class="menu">
-                            <div class="circle">
+                            <div class="circle" onclick="window.location.href='product-detail.html'">
                                 <i data-feather="search" stroke="white"></i>
                             </div>
-                            <div class="circle">
+                            <div class="circle add-shopping">
                                 <i data-feather="shopping-cart" stroke="white"></i>
                             </div>
                         </div>
@@ -260,14 +272,14 @@
                         <h6>$15.00</h6>
                     </div>
                 </div>
-                <div class="produk">
+                <div class="produk fruits" data-aos="fade-up" data-aos-duration="600">
                     <div class="produk-img">
                         <img src="/images/grape.png" alt="">
                         <div class="menu">
-                            <div class="circle">
+                            <div class="circle" onclick="window.location.href='product-detail.html'">
                                 <i data-feather="search" stroke="white"></i>
                             </div>
-                            <div class="circle">
+                            <div class="circle add-shopping">
                                 <i data-feather="shopping-cart" stroke="white"></i>
                             </div>
                         </div>
@@ -278,14 +290,14 @@
                         <h6>$15.00</h6>
                     </div>
                 </div>
-                <div class="produk">
+                <div class="produk fruits" data-aos="fade-up" data-aos-duration="800">
                     <div class="produk-img">
                         <img src="/images/grape.png" alt="">
                         <div class="menu">
-                            <div class="circle">
+                            <div class="circle" onclick="window.location.href='product-detail.html'">
                                 <i data-feather="search" stroke="white"></i>
                             </div>
-                            <div class="circle">
+                            <div class="circle add-shopping">
                                 <i data-feather="shopping-cart" stroke="white"></i>
                             </div>
                         </div>
@@ -296,14 +308,14 @@
                         <h6>$15.00</h6>
                     </div>
                 </div>
-                <div class="produk">
+                <div class="produk fruits" data-aos="fade-up" data-aos-duration="1000">
                     <div class="produk-img">
                         <img src="/images/grape.png" alt="">
                         <div class="menu">
-                            <div class="circle">
+                            <div class="circle" onclick="window.location.href='product-detail.html'">
                                 <i data-feather="search" stroke="white"></i>
                             </div>
-                            <div class="circle">
+                            <div class="circle add-shopping">
                                 <i data-feather="shopping-cart" stroke="white"></i>
                             </div>
                         </div>
@@ -314,14 +326,14 @@
                         <h6>$15.00</h6>
                     </div>
                 </div>
-                <div class="produk">
+                <div class="produk vegetables" data-aos="fade-up" data-aos-duration="400">
                     <div class="produk-img">
                         <img src="/images/grape.png" alt="">
                         <div class="menu">
-                            <div class="circle">
+                            <div class="circle" onclick="window.location.href='product-detail.html'">
                                 <i data-feather="search" stroke="white"></i>
                             </div>
-                            <div class="circle">
+                            <div class="circle add-shopping">
                                 <i data-feather="shopping-cart" stroke="white"></i>
                             </div>
                         </div>
@@ -332,14 +344,14 @@
                         <h6>$15.00</h6>
                     </div>
                 </div>
-                <div class="produk">
+                <div class="produk vegetables" data-aos="fade-up" data-aos-duration="600">
                     <div class="produk-img">
                         <img src="/images/grape.png" alt="">
                         <div class="menu">
-                            <div class="circle">
+                            <div class="circle" onclick="window.location.href='product-detail.html'">
                                 <i data-feather="search" stroke="white"></i>
                             </div>
-                            <div class="circle">
+                            <div class="circle add-shopping">
                                 <i data-feather="shopping-cart" stroke="white"></i>
                             </div>
                         </div>
@@ -350,14 +362,14 @@
                         <h6>$15.00</h6>
                     </div>
                 </div>
-                <div class="produk">
+                <div class="produk vegetables" data-aos="fade-up" data-aos-duration="800">
                     <div class="produk-img">
                         <img src="/images/grape.png" alt="">
                         <div class="menu">
-                            <div class="circle">
+                            <div class="circle" onclick="window.location.href='product-detail.html'">
                                 <i data-feather="search" stroke="white"></i>
                             </div>
-                            <div class="circle">
+                            <div class="circle add-shopping">
                                 <i data-feather="shopping-cart" stroke="white"></i>
                             </div>
                         </div>
@@ -368,14 +380,14 @@
                         <h6>$15.00</h6>
                     </div>
                 </div>
-                <div class="produk">
+                <div class="produk vegetables" data-aos="fade-up" data-aos-duration="1000">
                     <div class="produk-img">
                         <img src="/images/grape.png" alt="">
                         <div class="menu">
-                            <div class="circle">
+                            <div class="circle" onclick="window.location.href='product-detail.html'">
                                 <i data-feather="search" stroke="white"></i>
                             </div>
-                            <div class="circle">
+                            <div class="circle add-shopping">
                                 <i data-feather="shopping-cart" stroke="white"></i>
                             </div>
                         </div>
