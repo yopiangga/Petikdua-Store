@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product detail - Petik Dua</title>
+    <title>Cart - Petik Dua</title>
     <link rel="stylesheet" href="css/css-reset.css">
     <link rel="stylesheet" href="scss/style.css">
     <link rel="stylesheet" href="scss/style-mobile.css">
@@ -24,7 +24,7 @@
                 <ul>
                     <li><a href="dashboard.html">HOME</a></li>
                     <li><a href="about-us.html">ABOUT US</a></li>
-                    <li><a href="products.html" class="active">PRODUCT</a></li>
+                    <li><a href="products.html">PRODUCT</a></li>
                     <li><a href="testimonials.html">TESTIMONIALS</a></li>
                     <li><a href="contact.html">CONTACT</a></li>
                 </ul>
@@ -57,7 +57,7 @@
                 <ul>
                     <li><a href="dashboard.html".html">HOME</a></li>
                     <li><a href="about-us.html">ABOUT US</a></li>
-                    <li><a href="products.html" class="active">PRODUCT</a></li>
+                    <li><a href="products.html">PRODUCT</a></li>
                     <li><a href="testimonials.html">TESTIMONIALS</a></li>
                     <li><a href="contact.html">CONTACT</a></li>
                 </ul>
@@ -84,132 +84,85 @@
     <!-- Section 1 -->
     <section class="section-intro">
         <div class="content">
-            <h2>PRODUCT DETAIL</h2>
-            <p>Home / <span>Product Detail</span></p>
+            <h2>CART</h2>
+            <p>Home / <span>Cart</span></p>
         </div>
 
     </section>
     <!-- End Section 1 -->
 
     <!-- Section 2 -->
-    <section class="product-detail-home">
+    <section class="table-cart">
         <div class="content">
-            <div class="left">
-                <div class="big-img">
-                    <img class="big-img-1 active" src="/images/product-detail-1.jpg" alt="">
-                    <img class="big-img-2" src="/images/product-detail-1.jpg" alt="">
-                    <img class="big-img-3" src="/images/product-detail-1.jpg" alt="">
-                    <img class="big-img-4" src="/images/product-detail-1.jpg" alt="">
-                    <img class="big-img-5" src="/images/product-detail-1.jpg" alt="">
-                </div>
-                <div class="small-img">
-                    <img class="small-img-1" src="/images/product-detail-1.jpg" alt="">
-                    <img class="small-img-2" src="/images/product-detail-1.jpg" alt="">
-                    <img class="small-img-3" src="/images/product-detail-1.jpg" alt="">
-                    <img class="small-img-4" src="/images/product-detail-1.jpg" alt="">
-                    <img class="small-img-5" src="/images/product-detail-1.jpg" alt="">
-                </div>
-            </div>
-            <div class="right">
-                <h1>Fresh Natherlands Lecy</h1>
-                <h3>$15.00</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam necessitatibus unde natus amet reprehenderit ut error, atque eaque velit minima, porro consequuntur esse iure omnis.</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam necessitatibus unde natus amet reprehenderit ut error, atque eaque velit minima, porro consequuntur esse iure omnis labore nemo dolor laboriosam nisi.</p>
-                <form action="">
-                    <div class="form-group">
-                        <input type="text" placeholder="Quantity">
-                        <button class="btn-add-cart">Add to cart</button>
-                    </div>
-                </form>
-                <h4>SKU : <span>001</span></h4>
-                <h4>Category : <span>Fruits</span></h4>
-                <h4>Tag : <span>Fruits</span>, <span>Natherlands</span>, <span>Lecy</span></h4>
-            </div>
+            <table>
+                <tr class="tr-head">
+                    <th>#</th>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Sub Total</th>
+                </tr>
+                <tr>
+                    <td><i data-feather="x"></i></td>
+                    <td class="img"><img src="/images/product-detail-1.jpg" alt=""></td>
+                    <td>$15.00</td>
+                    <td>2</td>
+                    <td>$30.00</td>
+                </tr>
+                <tr>
+                    <td><i data-feather="x"></i></td>
+                    <td class="img"><img src="/images/product-detail-1.jpg" alt=""></td>
+                    <td>$15.00</td>
+                    <td>2</td>
+                    <td>$30.00</td>
+                </tr>
+                <tr>
+                    <td><i data-feather="x"></i></td>
+                    <td class="img"><img src="/images/product-detail-1.jpg" alt=""></td>
+                    <td>$15.00</td>
+                    <td>2</td>
+                    <td>$30.00</td>
+                </tr>
+            </table>
         </div>
     </section>
     <!-- End Section 2 -->
 
-    <section class="product-detail-related">
+    <!-- Section 3 -->
+    <section class="list-cart">
         <div class="content">
             <div class="content-head">
-                <h2>Related Poducts</h2>
+                <h2>Cart totals</h2>
             </div>
             <div class="content-body">
-                <div class="produk">
-                    <div class="produk-img">
-                        <img src="/images/grape.png" alt="">
-                        <div class="menu">
-                            <div class="circle">
-                                <i data-feather="search" stroke="white"></i>
-                            </div>
-                            <div class="circle">
-                                <i data-feather="shopping-cart" stroke="white"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="produk-body">
-                        <h4>Purple Grape</h4>
-                        <hr>
-                        <h6>$15.00</h6>
-                    </div>
-                </div>
-                <div class="produk">
-                    <div class="produk-img">
-                        <img src="/images/grape.png" alt="">
-                        <div class="menu">
-                            <div class="circle">
-                                <i data-feather="search" stroke="white"></i>
-                            </div>
-                            <div class="circle">
-                                <i data-feather="shopping-cart" stroke="white"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="produk-body">
-                        <h4>Purple Grape</h4>
-                        <hr>
-                        <h6>$15.00</h6>
-                    </div>
-                </div>
-                <div class="produk">
-                    <div class="produk-img">
-                        <img src="/images/grape.png" alt="">
-                        <div class="menu">
-                            <div class="circle">
-                                <i data-feather="search" stroke="white"></i>
-                            </div>
-                            <div class="circle">
-                                <i data-feather="shopping-cart" stroke="white"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="produk-body">
-                        <h4>Purple Grape</h4>
-                        <hr>
-                        <h6>$15.00</h6>
-                    </div>
-                </div>
-                <div class="produk">
-                    <div class="produk-img">
-                        <img src="/images/grape.png" alt="">
-                        <div class="menu">
-                            <div class="circle">
-                                <i data-feather="search" stroke="white"></i>
-                            </div>
-                            <div class="circle">
-                                <i data-feather="shopping-cart" stroke="white"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="produk-body">
-                        <h4>Purple Grape</h4>
-                        <hr>
-                        <h6>$15.00</h6>
-                    </div>
-                </div>
+                <table>
+                    <tr>
+                        <th>Sub total</th>
+                        <td>$30.00</td>
+                    </tr>
+                    <tr>
+                        <th>Shipping</th>
+                        <td>
+                            <h4>Flat rate: $79.00</h4>
+                            <h4>Shipping to Kediri</h4>
+                            <a href="">Change address</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Total</th>
+                        <td>$109.00</td>
+                    </tr>
+                    <tr style="border: none;">
+                        <td>
+                            <button class="btn-proceed-checkout">Proceed to checkout</button>
+                        </td>
+                    </tr>
+                </table>
+
             </div>
         </div>
     </section>
+    <!-- End Section 3 -->
     
 
     <!-- Section 6 -->

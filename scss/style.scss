@@ -2285,6 +2285,136 @@
     }
 
 
+    .table-cart {
+        height: 500px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-top: 120px;
+
+        .content {
+            width: 90%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+
+            table {
+                width: 95%;
+                color: $color-secondary;
+
+                .tr-head {
+                    height: 50px;
+                }
+
+                tr {
+                    height: 100px;
+                    display: flex;
+                    justify-content: space-around;
+                    border-bottom: 1px solid rgba($color: $color-secondary, $alpha: 0.3);
+
+                    th {
+                        font-weight: 500;
+                        font-size: 20px;
+                        text-align: center;
+                        width: 20%;
+                    }
+
+                    td {
+                        width: 20%; 
+                        display: flex;
+                        text-align: center;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        img {
+                            // height: 100px;
+                            width: 80px;
+                            margin: auto 0 auto 0;
+                        }
+                    }
+
+                }
+            }
+
+        }
+    }
+
+    
+    .list-cart {
+        color: $color-secondary;
+        height: 500px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        .content {
+            width: 90%;
+
+            .content-head {
+                margin-bottom: 50px;
+                h2 {
+                    font-size: 28px;
+                    font-weight: 600;
+                }
+            }
+
+            .content-body {
+                display: flex;
+                justify-content: center;
+                table {
+                    width: 90%;
+                    tr {
+
+                        height: 100px;
+                        display: flex;
+                        justify-content:flex-start;
+                        align-items: center;
+                        border-bottom: 1px solid rgba($color: $color-secondary, $alpha: 0.3);
+                        th {
+                            width: 25%;
+                            text-align: left;
+                            font-weight: 500;
+                            font-size: 16px;
+                        }
+
+                        td {
+                            h4 {
+                                margin-bottom: 10px;
+                            }
+
+                            a {
+                                text-decoration: none;
+                                color: $color-primary;
+                            }
+
+                            .btn-proceed-checkout {
+                                padding: 15px 20px 15px 20px;
+                                border-radius: 40px;
+                                border: 1px solid $color-primary;
+                                background-color: $color-primary;
+                                color: white;
+                                cursor: pointer;
+                                transition: 0.2s;
+                                width: 200px;
+                            }
+    
+                            .btn-proceed-checkout:hover {
+                                background-color: white;
+                                color: $color-primary;
+                                border: 1px solid $color-primary;
+                                transition: 0.2s;
+                            }
+    
+                            .btn-proceed-checkout:focus {
+                                outline: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 
 
 
