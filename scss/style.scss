@@ -2178,7 +2178,111 @@
     }
 
 
+    .product-detail-related {
+        height: 600px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
 
+        .content {
+            width: 90%;
+
+            .content-head {
+                margin-bottom: 50px;
+
+                h2 {
+                    font-size: 28px;
+                    font-weight: 600;
+                }
+            }
+
+            .content-body {
+                display: flex;
+                justify-content: space-around;
+                .produk {
+                    margin-bottom: 30px;
+                    border: 1px solid rgba($color-gray, 0.3);
+                    width: 250px;
+                    height: 370px;
+
+                    .produk-img {
+                        height: 250px;
+                        display: flex;
+                        justify-content: center;
+
+                        img {
+                            width: 150px;
+                        }
+
+                        .menu {
+                            display: none;
+                            position: absolute;
+                            justify-content: center;
+                            align-items: flex-end;
+                            background-color: rgba(255, 255, 255, 0.5);
+                            width: 250px;
+                            height: 250px;
+
+                            .circle {
+                                margin-bottom: 20px;
+                                margin-left: 5px;
+                                margin-right: 5px;
+                                width: 50px;
+                                height: 50px;
+                                background-color: $color-secondary;
+                                border-radius: 100%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                cursor: pointer;
+                                transition: 0.3s;
+                            }
+
+                            .circle:hover {
+                                background-color: $color-primary;
+                                transition: 0.3s;
+                            }
+                        }
+                    }
+
+                    .produk-body {
+                        height: 120px;
+                        text-align: center;
+
+                        h4 {
+                            margin-top: 10px;
+                            margin-bottom: 20px;
+                            font-weight: 600;
+                        }
+
+                        hr {
+                            width: 100px;
+                            margin-bottom: 15px;
+                        }
+                    }
+                }
+
+                .produk:hover {
+                    border: 1px solid $color-primary;
+                    box-shadow: 0px 10px 32px rgba($color-primary, 0.2);
+
+                    .menu {
+                        display: flex;
+                    }
+
+                    .produk-body {
+                        h4 {
+                            color: $color-primary
+                        }
+
+                        hr {
+                            border: 1px solid $color-primary;
+                        }
+                    }
+                }
+            }
+        }
+    }
 
 
 
