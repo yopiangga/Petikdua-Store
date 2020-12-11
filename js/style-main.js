@@ -285,6 +285,17 @@ $(document).ready(function(){
         $('.product-detail-home .content .left .big-img .big-img-5').addClass('active');
     });
 
+
+    $('nav .content .icon .search').click(function(){
+        $('.nav-search').toggleClass('active');
+        $('.navbar.desktop').toggleClass('search-active');
+    });
+
+    $('section').click(function(){
+        $('.nav-search').removeClass('active');
+        $('.navbar.desktop').removeClass('search-active');
+    });
+
 });
 
 
