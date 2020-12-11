@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product detail - Petik Dua</title>
+    <title>Checkout - Petik Dua</title>
     <link rel="stylesheet" href="css/css-reset.css">
     <link rel="stylesheet" href="scss/style.css">
     <link rel="stylesheet" href="scss/style-mobile.css">
@@ -24,7 +24,7 @@
                 <ul>
                     <li><a href="dashboard.html">HOME</a></li>
                     <li><a href="about-us.html">ABOUT US</a></li>
-                    <li><a href="products.html" class="active">PRODUCT</a></li>
+                    <li><a href="products.html">PRODUCT</a></li>
                     <li><a href="testimonials.html">TESTIMONIALS</a></li>
                     <li><a href="contact.html">CONTACT</a></li>
                 </ul>
@@ -57,7 +57,7 @@
                 <ul>
                     <li><a href="dashboard.html".html">HOME</a></li>
                     <li><a href="about-us.html">ABOUT US</a></li>
-                    <li><a href="products.html" class="active">PRODUCT</a></li>
+                    <li><a href="products.html">PRODUCT</a></li>
                     <li><a href="testimonials.html">TESTIMONIALS</a></li>
                     <li><a href="contact.html">CONTACT</a></li>
                 </ul>
@@ -84,132 +84,134 @@
     <!-- Section 1 -->
     <section class="section-intro">
         <div class="content">
-            <h2>PRODUCT DETAILS</h2>
-            <p>Home / <span>Product Details</span></p>
+            <h2>CHECKOUT</h2>
+            <p>Home / <span>Checkout</span></p>
         </div>
 
     </section>
     <!-- End Section 1 -->
 
     <!-- Section 2 -->
-    <section class="product-detail-home">
+    <section class="checkout-address">
         <div class="content">
-            <div class="left">
-                <div class="big-img">
-                    <img class="big-img-1 active" src="/images/product-detail-1.jpg" alt="">
-                    <img class="big-img-2" src="/images/product-detail-1.jpg" alt="">
-                    <img class="big-img-3" src="/images/product-detail-1.jpg" alt="">
-                    <img class="big-img-4" src="/images/product-detail-1.jpg" alt="">
-                    <img class="big-img-5" src="/images/product-detail-1.jpg" alt="">
-                </div>
-                <div class="small-img">
-                    <img class="small-img-1" src="/images/product-detail-1.jpg" alt="">
-                    <img class="small-img-2" src="/images/product-detail-1.jpg" alt="">
-                    <img class="small-img-3" src="/images/product-detail-1.jpg" alt="">
-                    <img class="small-img-4" src="/images/product-detail-1.jpg" alt="">
-                    <img class="small-img-5" src="/images/product-detail-1.jpg" alt="">
-                </div>
-            </div>
-            <div class="right">
-                <h1>Fresh Natherlands Lecy</h1>
-                <h3>$15.00</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam necessitatibus unde natus amet reprehenderit ut error, atque eaque velit minima, porro consequuntur esse iure omnis.</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam necessitatibus unde natus amet reprehenderit ut error, atque eaque velit minima, porro consequuntur esse iure omnis labore nemo dolor laboriosam nisi.</p>
-                <form action="">
-                    <div class="form-group">
-                        <input type="text" placeholder="Quantity">
-                        <button class="btn-add-cart">Add to cart</button>
+            <form action="">
+                <div class="billing">
+                    <div class="billing-head">
+                        <h2>Billing Address</h2>
                     </div>
-                </form>
-                <h4>SKU : <span>001</span></h4>
-                <h4>Category : <span>Fruits</span></h4>
-                <h4>Tag : <span>Fruits</span>, <span>Natherlands</span>, <span>Lecy</span></h4>
-            </div>
+                    <div class="billing-body">
+                        <div class="body-left">
+                            <div class="form-group">
+                                <label for="">First name *</label>
+                                <input type="text" placeholder="" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Last name *</label>
+                                <input type="text" placeholder="" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Company name (optional)</label>
+                                <input type="text" placeholder="">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Phone *</label>
+                                <input type="text" placeholder="" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Email address *</label>
+                                <input type="text" placeholder="" required>
+                            </div>
+                        </div>
+                        <div class="body-right">
+                            <div class="form-group">
+                                <label for="">Street address *</label>
+                                <input type="text" placeholder="House number and street name" required>
+                                <!-- <input type="text" placeholder="Apartment, suite, unit etc. (optional)"> -->
+                            </div>
+                            <div class="form-group">
+                                <label for="">Town / City *</label>
+                                <input type="text" placeholder="" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Province *</label>
+                                <input type="text" placeholder="" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Country *</label>
+                                <input type="text" placeholder="" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Postcode / ZIP *</label>
+                                <input type="text" placeholder="" required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="your-order">
+                    <div class="your-order-head">
+                        <h2>Your order</h2>
+                    </div>
+                    <div class="your-order-body">
+                        <table>
+                            <tr>
+                                <th>Product</th>
+                                <th>Subtotal</th>
+                            </tr>
+                            <tr class="list-product">
+                                <td>Fresh Natherlands Lecy</td>
+                                <td>$15.00</td>
+                            </tr>
+                            <tr>
+                                <th>Subtotal</th>
+                                <td>$15.00</td>
+                            </tr>
+                            <tr>
+                                <th>Shipping</th>
+                                <td>Flat rate: $79.00</td>
+                            </tr>
+                            <tr>
+                                <th>Total</th>
+                                <td>$94.00</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="payment">
+                    <div class="payment-body">
+                        <div class="form-group">
+                            <input type="radio" name="radio" checked>
+                            <div class="label">
+                                <h4>Bank Transfer</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis nobis maiores minima magni maxime accusamus</p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="radio" name="radio">
+                            <div class="label">
+                                <h4>Cash on delivery</h4>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam repellat vel eveniet maxime</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="action">
+                    <div class="action-head">
+                        <p>Your personal data will be used to process your order, support your experience throughout this website, and for other purposes described in our privacy policy.</p>
+                    </div>
+                    <div class="action-body">
+                        <button type="submit" class="btn-place-order">Place order</button>
+                    </div>
+                </div>
+            </form>
         </div>
     </section>
     <!-- End Section 2 -->
 
-    <section class="product-detail-related">
-        <div class="content">
-            <div class="content-head">
-                <h2>Related Poducts</h2>
-            </div>
-            <div class="content-body">
-                <div class="produk">
-                    <div class="produk-img">
-                        <img src="/images/grape.png" alt="">
-                        <div class="menu">
-                            <div class="circle">
-                                <i data-feather="search" stroke="white"></i>
-                            </div>
-                            <div class="circle">
-                                <i data-feather="shopping-cart" stroke="white"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="produk-body">
-                        <h4>Purple Grape</h4>
-                        <hr>
-                        <h6>$15.00</h6>
-                    </div>
-                </div>
-                <div class="produk">
-                    <div class="produk-img">
-                        <img src="/images/grape.png" alt="">
-                        <div class="menu">
-                            <div class="circle">
-                                <i data-feather="search" stroke="white"></i>
-                            </div>
-                            <div class="circle">
-                                <i data-feather="shopping-cart" stroke="white"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="produk-body">
-                        <h4>Purple Grape</h4>
-                        <hr>
-                        <h6>$15.00</h6>
-                    </div>
-                </div>
-                <div class="produk">
-                    <div class="produk-img">
-                        <img src="/images/grape.png" alt="">
-                        <div class="menu">
-                            <div class="circle">
-                                <i data-feather="search" stroke="white"></i>
-                            </div>
-                            <div class="circle">
-                                <i data-feather="shopping-cart" stroke="white"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="produk-body">
-                        <h4>Purple Grape</h4>
-                        <hr>
-                        <h6>$15.00</h6>
-                    </div>
-                </div>
-                <div class="produk">
-                    <div class="produk-img">
-                        <img src="/images/grape.png" alt="">
-                        <div class="menu">
-                            <div class="circle">
-                                <i data-feather="search" stroke="white"></i>
-                            </div>
-                            <div class="circle">
-                                <i data-feather="shopping-cart" stroke="white"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="produk-body">
-                        <h4>Purple Grape</h4>
-                        <hr>
-                        <h6>$15.00</h6>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Section 3 -->
+
+    <!-- End Section 3 -->
     
 
     <!-- Section 6 -->
