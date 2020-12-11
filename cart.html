@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="scss/style-landscape.css">
     <link rel="stylesheet" href="scss/style-tab.css">
     <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="js/aos/aos.css">
+    <link rel="stylesheet" href="css/animate.min.css">
 </head>
 <body>
 
@@ -34,14 +36,14 @@
                     <i data-feather="search" stroke="#534741"></i>
                 </div>
                 
-                <div class="cart">
-                    <i data-feather="shopping-cart" stroke="#534741"></i>
+                <div class="cart active" onclick="window.location.href='cart.html'">
+                    <i data-feather="shopping-cart" stroke="#8EB359"></i>
                     <div class="notif">
                         <p>5</p>
                     </div>
                 </div>
 
-                <div class="user">
+                <div class="user" onclick="window.location.href='personal-information.html'">
                     <i data-feather="user" stroke="#534741"></i>
                 </div>
             </div>
@@ -67,14 +69,14 @@
                     <i data-feather="search" stroke="#534741"></i>
                 </div>
                 
-                <div class="cart">
-                    <i data-feather="shopping-cart" stroke="#534741"></i>
+                <div class="cart" onclick="window.location.href='cart.html'">
+                    <i data-feather="shopping-cart" stroke="#8EB359"></i>
                     <div class="notif">
                         <p>5</p>
                     </div>
                 </div>
 
-                <div class="user">
+                <div class="user" onclick="window.location.href='personal-information.html'">
                     <i data-feather="user" stroke="#534741"></i>
                 </div>
             </div>
@@ -187,31 +189,31 @@
             <div class="body">
                 <div class="contact">
                     <h4>Contact</h4>
-                    <h6>RT 14 RW 05 Desa Gambyok</h6>
-                    <h6>0823 3041 0865</h6>
-                    <h6>webpetikdua@gmail.com</h6>
-                    <h6>www.petikdua.store</h6>
+                    <h6 onclick="window.location.href='https://g.page/yopiangga-web-app-design?share'">Kediri, Jawa Timur - Indonesia</h6>
+                    <h6 onclick="window.location.href=''">0823 3041 0865</h6>
+                    <h6 onclick="window.location.href=''">webpetikdua@gmail.com</h6>
+                    <h6 onclick="window.location.href='http://petikdua.store/'">www.petikdua.store</h6>
                     <div class="media-sosial" id="desktop">
-                        <i data-feather="facebook" stroke="#8EB359"></i>
-                        <i data-feather="instagram" stroke="#8EB359"></i>
-                        <i data-feather="twitter" stroke="#8EB359"></i>
-                        <i data-feather="linkedin" stroke="#8EB359"></i>
+                        <i data-feather="facebook" stroke="#8EB359" onclick="window.location.href='https://www.facebook.com/alfian.prisma.yopiangga'"></i>
+                        <i data-feather="instagram" stroke="#8EB359" onclick="window.location.href='https://www.instagram.com/alfian_prisma_yopiangga/'"></i>
+                        <i data-feather="twitter" stroke="#8EB359" onclick="window.location.href='https://twitter.com/AlfianPrisma'"></i>
+                        <i data-feather="linkedin" stroke="#8EB359" onclick="window.location.href='https://www.linkedin.com/in/alfian-prisma-yopiangga-a954251a8/'"></i>
                     </div>
                 </div>
                 <div class="information">
                     <h4>Information</h4>
-                    <h6>New Products</h6>
-                    <h6>Hot Products</h6>
-                    <h6>Our Blog</h6>
-                    <h6>About Our Shop</h6>
+                    <h6 onclick="window.location.href=''">New Products</h6>
+                    <h6 onclick="window.location.href=''">Hot Products</h6>
+                    <h6 onclick="window.location.href=''">Our Blog</h6>
+                    <h6 onclick="window.location.href=''">About Our Shop</h6>
                 </div>
                 <div class="navigation">
                     <h4>Navigation</h4>
-                    <h6>Dashboard</h6>
-                    <h6>About Us</h6>
-                    <h6>Product</h6>
-                    <h6>Testimonials</h6>
-                    <h6>Contact</h6>
+                    <h6 onclick="window.location.href='dashboard.html'">Dashboard</h6>
+                    <h6 onclick="window.location.href='about-us.html'">About Us</h6>
+                    <h6 onclick="window.location.href='products.html'">Product</h6>
+                    <h6 onclick="window.location.href='testimonials.html'">Testimonials</h6>
+                    <h6 onclick="window.location.href='contact.html'">Contact</h6>
                 </div>
                 <div class="photo">
                     <h4>Photo in Instagram</h4>
@@ -223,10 +225,10 @@
                     </div>
                 </div>
                 <div class="media-sosial" id="mobile">
-                    <i data-feather="facebook" stroke="#8EB359"></i>
-                    <i data-feather="instagram" stroke="#8EB359"></i>
-                    <i data-feather="twitter" stroke="#8EB359"></i>
-                    <i data-feather="linkedin" stroke="#8EB359"></i>
+                    <i data-feather="facebook" stroke="#8EB359" onclick="window.location.href='https://www.facebook.com/alfian.prisma.yopiangga'"></i>
+                    <i data-feather="instagram" stroke="#8EB359" onclick="window.location.href='https://www.instagram.com/alfian_prisma_yopiangga/'"></i>
+                    <i data-feather="twitter" stroke="#8EB359" onclick="window.location.href='https://twitter.com/AlfianPrisma'"></i>
+                    <i data-feather="linkedin" stroke="#8EB359" onclick="window.location.href='https://www.linkedin.com/in/alfian-prisma-yopiangga-a954251a8/'"></i>
                 </div>
             </div>
             <div class="copyright">
@@ -240,5 +242,9 @@
     <script>feather.replace()</script>
     <script src="/js/jquery-3.5.1.js"></script>
     <script src="/js/style-main.js"></script>
+    <script src="js/aos/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

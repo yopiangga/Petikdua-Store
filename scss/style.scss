@@ -106,16 +106,39 @@
                 justify-content: space-around;
                 align-items: center;
 
+                div {
+                    height: 95%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                div.active {
+                    border-bottom: 3px solid $color-primary;
+                }
+
                 .search {
                     display: flex;
+                }
+
+                .search:hover {
+                    cursor: pointer;
                 }
 
                 .user {
                     display: flex;
                 }
 
+                .user:hover {
+                    cursor: pointer;
+                }
+
                 .cart {
                     display: flex;
+                }
+
+                .cart:hover {
+                    cursor: pointer;
                 }
 
                 .notif {
@@ -196,6 +219,13 @@
                     border-radius: 40px;
                     font-weight: 600;
                     color: $color-primary;
+                    cursor: pointer;
+                }
+
+                .btn-shop:hover {
+                    background-color: $color-primary;
+                    color: white;
+                    transition: 300ms;
                 }
 
             }
@@ -204,7 +234,7 @@
                 background-color: transparent;
                 border: 3px solid white;
                 position: absolute;
-                bottom: -90px;
+                bottom: -80px;
                 height: 50px;
                 width: 30px;
                 border-radius: 30px;
@@ -217,6 +247,15 @@
                     border-radius: 10px;
                     background-color: white;
                     margin-top: 8px;
+                    position: relative;
+                    top: 20px;
+                }
+            }
+
+            .icon-down:hover {
+                .circle {
+                    position: relative;
+                    top: 0px;
                 }
             }
         }
@@ -739,6 +778,7 @@
 
                     .card-blog {
                         width: 80%;
+                        cursor: pointer;
 
                         .blog-img {
                             height: 270px;
@@ -756,6 +796,7 @@
                                 width: 100%;
                                 height: 260px;
                                 position: relative;
+                                transition: 300ms;
                             }
                         }
 
@@ -791,12 +832,23 @@
                             }
                         }
                     }
+
+                    .card-blog:hover {
+                        .blog-img {
+                            img {
+                                transition: 300ms;
+                                width: 107%;
+                                top: -260px;
+                            }
+                        }
+                    }
                 }
 
                 .blog-right {
                     width: 50%;
 
                     .card-blog {
+                        cursor: pointer;
                         width: 100%;
                         height: 150px;
                         display: flex;
@@ -811,6 +863,7 @@
                             img {
                                 width: 100%;
                                 height: 120px;
+                                transition: 300ms;
                             }
                         }
 
@@ -843,6 +896,16 @@
                                     text-decoration: none;
                                     color: inherit;
                                 }
+                            }
+                        }
+                    }
+
+                    .card-blog:hover {
+                        .blog-img {
+                            img {
+                                transition: 300ms;
+                                width: 113%;
+                                height: 140px;
                             }
                         }
                     }
@@ -951,11 +1014,18 @@
                         margin-bottom: 20px;
                     }
 
+                    h6:hover {
+                        cursor: pointer;
+                        color: $color-primary;
+                        transition: 150ms;
+                    }
+
                     .media-sosial {
                         margin-top: 50px;
                         display: flex;
                         justify-content: space-between;
                         width: 50%;
+                        cursor: pointer;
                     }
                 }
 
@@ -972,6 +1042,12 @@
                         font-size: 16px;
                         margin-bottom: 20px;
                     }
+
+                    h6:hover {
+                        cursor: pointer;
+                        color: $color-primary;
+                        transition: 150ms;
+                    }
                 }
 
                 .navigation {
@@ -986,6 +1062,12 @@
                     h6 {
                         font-size: 16px;
                         margin-bottom: 20px;
+                    }
+
+                    h6:hover {
+                        cursor: pointer;
+                        color: $color-primary;
+                        transition: 150ms;
                     }
                 }
 
@@ -1416,6 +1498,26 @@
                         }
                     }
                 }
+
+                .fruits.unActive {
+                    display: none;
+                }
+
+                .vegetables.unActive {
+                    display: none;
+                }
+
+                .garlics.unActive {
+                    display: none;
+                }
+
+                .seafoods.unActive {
+                    display: none;
+                }
+
+                .meets.unActive {
+                    display: none;
+                }
             }
         }
     }
@@ -1530,6 +1632,7 @@
                         display: flex;
                         justify-content: space-between;
                         width: 50%;
+                        cursor: pointer;
                     }
                 }
             }
@@ -1601,6 +1704,7 @@
                     display: flex;
                     justify-content: space-between;
                     width: 50%;
+                    cursor: pointer;
                 }
             }
 

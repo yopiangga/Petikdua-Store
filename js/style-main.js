@@ -135,7 +135,156 @@ $(document).ready(function(){
     });
 
 
+
+    // Product page
+    $('.products-product .content .title .button .btn-all').click(function(){
+        $('.products-product .content .body .fruits').removeClass('unActive');
+        $('.products-product .content .body .vegetables').removeClass('unActive');
+        $('.products-product .content .body .garlics').removeClass('unActive');
+        $('.products-product .content .body .seafoods').removeClass('unActive');
+        $('.products-product .content .body .meets').removeClass('unActive');
+
+        $('.products-product .content .title .button .btn-all').addClass('active');
+        $('.products-product .content .title .button .btn-fruits').removeClass('active');
+        $('.products-product .content .title .button .btn-vegetables').removeClass('active');
+        $('.products-product .content .title .button .btn-garlic').removeClass('active');
+        $('.products-product .content .title .button .btn-seafoods').removeClass('active');
+        $('.products-product .content .title .button .btn-meets').removeClass('active');
+    });
+
+    $('.products-product .content .title .button .btn-fruits').click(function(){
+        $('.products-product .content .body .fruits').removeClass('unActive');
+        $('.products-product .content .body .vegetables').addClass('unActive');
+        $('.products-product .content .body .garlics').addClass('unActive');
+        $('.products-product .content .body .seafoods').addClass('unActive');
+        $('.products-product .content .body .meets').addClass('unActive');
+
+        $('.products-product .content .title .button .btn-all').removeClass('active');
+        $('.products-product .content .title .button .btn-fruits').addClass('active');
+        $('.products-product .content .title .button .btn-vegetables').removeClass('active');
+        $('.products-product .content .title .button .btn-garlic').removeClass('active');
+        $('.products-product .content .title .button .btn-seafoods').removeClass('active');
+        $('.products-product .content .title .button .btn-meets').removeClass('active');
+    });
+
+    $('.products-product .content .title .button .btn-vegetables').click(function(){
+        $('.products-product .content .body .fruits').addClass('unActive');
+        $('.products-product .content .body .vegetables').removeClass('unActive');
+        $('.products-product .content .body .garlics').addClass('unActive');
+        $('.products-product .content .body .seafoods').addClass('unActive');
+        $('.products-product .content .body .meets').addClass('unActive');
+
+        $('.products-product .content .title .button .btn-all').removeClass('active');
+        $('.products-product .content .title .button .btn-fruits').removeClass('active');
+        $('.products-product .content .title .button .btn-vegetables').addClass('active');
+        $('.products-product .content .title .button .btn-garlic').removeClass('active');
+        $('.products-product .content .title .button .btn-seafoods').removeClass('active');
+        $('.products-product .content .title .button .btn-meets').removeClass('active');
+    });
+
+    $('.products-product .content .title .button .btn-garlics').click(function(){
+        $('.products-product .content .body .fruits').addClass('unActive');
+        $('.products-product .content .body .vegetables').addClass('unActive');
+        $('.products-product .content .body .garlics').removeClass('unActive');
+        $('.products-product .content .body .seafoods').addClass('unActive');
+        $('.products-product .content .body .meets').addClass('unActive');
+
+        $('.products-product .content .title .button .btn-all').removeClass('active');
+        $('.products-product .content .title .button .btn-fruits').removeClass('active');
+        $('.products-product .content .title .button .btn-vegetables').removeClass('active');
+        $('.products-product .content .title .button .btn-garlic').addClass('active');
+        $('.products-product .content .title .button .btn-seafoods').removeClass('active');
+        $('.products-product .content .title .button .btn-meets').removeClass('active');
+    });
+
+    $('.products-product .content .title .button .btn-seafoods').click(function(){
+        $('.products-product .content .body .fruits').addClass('unActive');
+        $('.products-product .content .body .vegetables').addClass('unActive');
+        $('.products-product .content .body .garlics').addClass('unActive');
+        $('.products-product .content .body .seafoods').removeClass('unActive');
+        $('.products-product .content .body .meets').addClass('unActive');
+
+        $('.products-product .content .title .button .btn-all').removeClass('active');
+        $('.products-product .content .title .button .btn-fruits').removeClass('active');
+        $('.products-product .content .title .button .btn-vegetables').removeClass('active');
+        $('.products-product .content .title .button .btn-garlic').removeClass('active');
+        $('.products-product .content .title .button .btn-seafoods').addClass('active');
+        $('.products-product .content .title .button .btn-meets').removeClass('active');
+    });
+
+    $('.products-product .content .title .button .btn-meets').click(function(){
+        $('.products-product .content .body .fruits').addClass('unActive');
+        $('.products-product .content .body .vegetables').addClass('unActive');
+        $('.products-product .content .body .garlics').addClass('unActive');
+        $('.products-product .content .body .seafoods').addClass('unActive');
+        $('.products-product .content .body .meets').removeClass('unActive');
+
+        $('.products-product .content .title .button .btn-all').removeClass('active');
+        $('.products-product .content .title .button .btn-fruits').removeClass('active');
+        $('.products-product .content .title .button .btn-vegetables').removeClass('active');
+        $('.products-product .content .title .button .btn-garlic').removeClass('active');
+        $('.products-product .content .title .button .btn-seafoods').removeClass('active');
+        $('.products-product .content .title .button .btn-meets').addClass('active');
+    });
+
+    $('.products-product .content .body .produk .add-shopping').click(function(){
+        $('nav .content .icon .cart .notif').addClass('animate__animated animate__bounce');
+    });
+
+    $('.products-product .content .body .produk .add-shopping').hover(function(){
+        $('nav .content .icon .cart .notif').removeClass('animate__animated animate__bounce');
+    });
+    // End Product page
+
     
+    $('.product-detail-related .content .content-body .produk .produk-img .menu .add-shopping').click(function(){
+        $('nav .content .icon .cart .notif').addClass('animate__animated animate__bounce');
+    });
+
+    $('.product-detail-related .content .content-body .produk .produk-img .menu .add-shopping').hover(function(){
+        $('nav .content .icon .cart .notif').removeClass('animate__animated animate__bounce');
+    });
+
+    $('.product-detail-home .content .left .small-img .small-img-1').click(function(){
+        $('.product-detail-home .content .left .big-img .big-img-1').addClass('active');
+        $('.product-detail-home .content .left .big-img .big-img-2').removeClass('active');
+        $('.product-detail-home .content .left .big-img .big-img-3').removeClass('active');
+        $('.product-detail-home .content .left .big-img .big-img-4').removeClass('active');
+        $('.product-detail-home .content .left .big-img .big-img-5').removeClass('active');
+    });
+
+    $('.product-detail-home .content .left .small-img .small-img-2').click(function(){
+        $('.product-detail-home .content .left .big-img .big-img-1').removeClass('active');
+        $('.product-detail-home .content .left .big-img .big-img-2').addClass('active');
+        $('.product-detail-home .content .left .big-img .big-img-3').removeClass('active');
+        $('.product-detail-home .content .left .big-img .big-img-4').removeClass('active');
+        $('.product-detail-home .content .left .big-img .big-img-5').removeClass('active');
+    });
+
+    $('.product-detail-home .content .left .small-img .small-img-3').click(function(){
+        $('.product-detail-home .content .left .big-img .big-img-1').removeClass('active');
+        $('.product-detail-home .content .left .big-img .big-img-2').removeClass('active');
+        $('.product-detail-home .content .left .big-img .big-img-3').addClass('active');
+        $('.product-detail-home .content .left .big-img .big-img-4').removeClass('active');
+        $('.product-detail-home .content .left .big-img .big-img-5').removeClass('active');
+    });
+
+    $('.product-detail-home .content .left .small-img .small-img-4').click(function(){
+        $('.product-detail-home .content .left .big-img .big-img-1').removeClass('active');
+        $('.product-detail-home .content .left .big-img .big-img-2').removeClass('active');
+        $('.product-detail-home .content .left .big-img .big-img-3').removeClass('active');
+        $('.product-detail-home .content .left .big-img .big-img-4').addClass('active');
+        $('.product-detail-home .content .left .big-img .big-img-5').removeClass('active');
+    });
+
+    $('.product-detail-home .content .left .small-img .small-img-5').click(function(){
+        $('.product-detail-home .content .left .big-img .big-img-1').removeClass('active');
+        $('.product-detail-home .content .left .big-img .big-img-2').removeClass('active');
+        $('.product-detail-home .content .left .big-img .big-img-3').removeClass('active');
+        $('.product-detail-home .content .left .big-img .big-img-4').removeClass('active');
+        $('.product-detail-home .content .left .big-img .big-img-5').addClass('active');
+    });
+
 });
 
 
