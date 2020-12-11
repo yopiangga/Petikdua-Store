@@ -2697,6 +2697,7 @@
     margin-bottom: 5px;
   }
   .checkout-address .content form .billing .billing-body .form-group input {
+    font-family: "Poppins";
     padding: 15px 0px 15px 0px;
     border: none;
     border-bottom: 1px solid rgba(51, 51, 51, 0.3);
@@ -2794,6 +2795,140 @@
     transition: 0.2s;
   }
   .checkout-address .content form .action .action-body .btn-place-order:focus {
+    outline: none;
+  }
+  .personal-address {
+    width: 100%;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: #333333;
+  }
+  .personal-address .content {
+    width: 90%;
+    height: 100%;
+  }
+  .personal-address .content form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .personal-address .content form .billing {
+    margin-bottom: 30px;
+    width: 90%;
+  }
+  .personal-address .content form .billing .billing-head {
+    margin-bottom: 30px;
+  }
+  .personal-address .content form .billing .billing-head h2 {
+    font-weight: 600;
+    font-size: 28px;
+  }
+  .personal-address .content form .billing .billing-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .personal-address .content form .billing .billing-body .body-left {
+    width: 49%;
+  }
+  .personal-address .content form .billing .billing-body .body-right {
+    width: 49%;
+  }
+  .personal-address .content form .billing .billing-body .form-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .personal-address .content form .billing .billing-body .form-group label {
+    margin-bottom: 5px;
+  }
+  .personal-address .content form .billing .billing-body .form-group input {
+    font-family: "Poppins";
+    padding: 15px 0px 15px 0px;
+    border: none;
+    border-bottom: 1px solid rgba(51, 51, 51, 0.3);
+  }
+  .personal-address .content form .edit-password {
+    width: 90%;
+  }
+  .personal-address .content form .edit-password .edit-head {
+    margin-bottom: 30px;
+  }
+  .personal-address .content form .edit-password .edit-head h2 {
+    font-weight: 600;
+    font-size: 28px;
+  }
+  .personal-address .content form .edit-password .edit-body .body-left {
+    width: 50%;
+  }
+  .personal-address .content form .edit-password .edit-body .body-left .form-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .personal-address .content form .edit-password .edit-body .body-left .form-group label {
+    margin-bottom: 5px;
+  }
+  .personal-address .content form .edit-password .edit-body .body-left .form-group input {
+    font-family: "Poppins";
+    padding: 15px 0px 15px 0px;
+    border: none;
+    border-bottom: 1px solid rgba(51, 51, 51, 0.3);
+  }
+  .personal-address .content form .action {
+    width: 90%;
+  }
+  .personal-address .content form .action .action-head {
+    margin-bottom: 30px;
+  }
+  .personal-address .content form .action .action-head p {
+    line-height: 28px;
+  }
+  .personal-address .content form .action .action-body .btn-place-order {
+    padding: 15px 20px 15px 20px;
+    border-radius: 40px;
+    border: 1px solid #8EB359;
+    background-color: #8EB359;
+    color: white;
+    cursor: pointer;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    width: 200px;
+  }
+  .personal-address .content form .action .action-body .btn-place-order:hover {
+    background-color: white;
+    color: #8EB359;
+    border: 1px solid #8EB359;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+  .personal-address .content form .action .action-body .btn-place-order:focus {
     outline: none;
   }
   .mobile {
