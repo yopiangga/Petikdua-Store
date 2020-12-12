@@ -240,6 +240,7 @@
         -ms-flex-align: center;
             align-items: center;
     height: 660px;
+    z-index: 2;
   }
   .home-intro .slide {
     width: 100%;
@@ -937,6 +938,12 @@
   .home-blog .content .body .blog-left {
     width: 100%;
     margin-bottom: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .home-blog .content .body .blog-left .card-blog {
     width: 90%;
@@ -985,9 +992,19 @@
   }
   .home-blog .content .body .blog-right {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .home-blog .content .body .blog-right .card-blog {
-    width: 100%;
+    width: 90%;
     height: 150px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1008,7 +1025,7 @@
   }
   .home-blog .content .body .blog-right .card-blog .blog-img img {
     width: 100%;
-    height: 45%;
+    height: auto;
   }
   .home-blog .content .body .blog-right .card-blog .blog-body {
     width: 65%;
