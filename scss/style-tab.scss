@@ -1701,35 +1701,31 @@ nav {
 
 .sign-in-sign-up {
     width: 100%;
-    height: 650px;
     display: flex;
     justify-content: center;
     align-items: center;
 
     .content {
-        width: 70%;
-        height: 500px;
+        width: 100%;
         background-color: white;
-        border-radius: 20px;
         box-shadow: 0px 0px 30px rgba($color: $color-secondary, $alpha: 0.15);
         display: flex;
+        flex-direction: column;
         overflow: hidden;
         color: $color-secondary;
 
         .content-left {
-            width: 65%;
-            transition: 1500ms;
-            height: 100%;
-            padding: 20px;
+            width: 100%;
+            // transition: 1500ms;
+            min-height: 660px;
+            padding: 10px;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            box-sizing: border-box;
 
             .logo {
-                margin-bottom: 30px;
+                margin-bottom: 70px;
                 display: flex;
-                position: fixed;
-                top: 90px;
 
                 img {
                     width: 120px;
@@ -1856,14 +1852,15 @@ nav {
         }
 
         .content-right {
-            width: 35%;
+            width: 100%;
             transition: 1500ms;
             height: 100%;
             background-color: $color-primary;
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 20px;
+            padding: 10px;
+            box-sizing: border-box;
 
             .sign-up {
                 width: 100%;
@@ -1922,9 +1919,8 @@ nav {
     .content.active {
 
         .content-left {
-            width: 35%;
-            height: 100%;
-            transition: 1000ms;
+            min-height: 350px;
+            width: 100%;
             background-color: $color-primary;
 
             .logo {
@@ -1934,8 +1930,6 @@ nav {
             .logo-light {
                 display: flex;
                 margin-bottom: 30px;
-                position: fixed;
-                top: 90px;
 
                 img {
                     width: 120px;
@@ -1993,7 +1987,8 @@ nav {
 
         .content-right {
             transition: 1000ms;
-            width: 65%;
+            width: 100%;
+            min-height: 650px;
             background-color: white;
 
             .sign-up {
@@ -2010,6 +2005,8 @@ nav {
                     font-size: 28px;
                     font-weight: 500;
                     margin-bottom: 30px;
+                    width: 80%;
+                    line-height: 36px;
 
                     span {
                         color: $color-primary;
@@ -2096,6 +2093,7 @@ nav {
                         cursor: pointer;
                         transition: 0.2s;
                         width: 200px;
+                        margin-top: 20px;
                     }
 
                     .btn-sign-up:hover {
@@ -2112,6 +2110,7 @@ nav {
         }
     }
 }
+
 
 
 
