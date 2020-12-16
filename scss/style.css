@@ -2696,6 +2696,24 @@
   .table-cart .content table .tr-head {
     height: 50px;
   }
+  .table-cart .content table .tr-1.unActive {
+    display: none;
+  }
+  .table-cart .content table .tr-2.unActive {
+    display: none;
+  }
+  .table-cart .content table .tr-3.unActive {
+    display: none;
+  }
+  .table-cart .content table .td-1 {
+    cursor: pointer;
+  }
+  .table-cart .content table .td-2 {
+    cursor: pointer;
+  }
+  .table-cart .content table .td-3 {
+    cursor: pointer;
+  }
   .table-cart .content table tr {
     height: 100px;
     display: -webkit-box;

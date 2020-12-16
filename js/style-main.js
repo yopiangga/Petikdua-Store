@@ -296,6 +296,25 @@ $(document).ready(function(){
         $('.navbar').removeClass('search-active');
     });
 
+
+    $('.table-cart .content table .tr-1 .td-1').click(function(){
+        $('.table-cart .content table .tr-1').addClass('unActive');
+        $('.table-cart .content table .tr-2').addClass('animate__animated animate__fadeInUp');
+        $('.table-cart .content table .tr-3').addClass('animate__animated animate__fadeInUp');
+    });
+
+    $('.table-cart .content table .tr-2 .td-2').click(function(){
+        $('.table-cart .content table .tr-1').addClass('animate__animated animate__fadeInUp');
+        $('.table-cart .content table .tr-2').addClass('unActive');
+        $('.table-cart .content table .tr-3').addClass('animate__animated animate__fadeInUp');
+    });
+
+    $('.table-cart .content table .tr-3 .td-3').click(function(){
+        $('.table-cart .content table .tr-1').addClass('animate__animated animate__fadeInUp');
+        $('.table-cart .content table .tr-2').addClass('animate__animated animate__fadeInUp');
+        $('.table-cart .content table .tr-3').addClass('unActive');
+    });
+
 });
 
 

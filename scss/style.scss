@@ -2481,6 +2481,30 @@
                     height: 50px;
                 }
 
+                .tr-1.unActive {
+                    display: none;
+                }
+
+                .tr-2.unActive {
+                    display: none;
+                }
+
+                .tr-3.unActive {
+                    display: none;
+                }
+
+                .td-1 {
+                    cursor: pointer;
+                }
+
+                .td-2 {
+                    cursor: pointer;
+                }
+
+                .td-3 {
+                    cursor: pointer;
+                }
+
                 tr {
                     height: 100px;
                     display: flex;
