@@ -152,9 +152,10 @@ nav {
         }
 
         .icon {
-            width: 130px;
+            width: 150px;
             display: flex;
             align-items: center;
+            justify-content: space-between;
             .search {
                 display: flex;
                 margin-right: 20px;
@@ -1099,10 +1100,12 @@ nav {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         h2 {
             text-align: center;
             font-size: 40px;
             margin-bottom: 10px;
+            line-height: 48px;
         }
         p {
             text-align: center;
@@ -1112,6 +1115,23 @@ nav {
             span {
                 color: $color-primary;
             }
+        }
+
+        .btn-signout {
+            width: 120px;
+            height: 40px;
+            background-color: transparent;
+            border-radius: 20px;
+            color: $color-primary;
+            border: 1px solid $color-primary;
+            cursor: pointer;
+            transition: 300ms;
+        }
+
+        .btn-signout:hover {
+            transition: 300ms;
+            background-color: $color-primary;
+            color: white;
         }
 
     }

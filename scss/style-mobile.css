@@ -175,13 +175,16 @@
     display: flex;
   }
   nav .content .icon {
-    width: 130px;
+    width: 140px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   nav .content .icon .search {
     display: -webkit-box;
@@ -1273,11 +1276,15 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .section-intro .content h2 {
     text-align: center;
     font-size: 40px;
     margin-bottom: 10px;
+    line-height: 48px;
   }
   .section-intro .content p {
     text-align: center;
@@ -1287,6 +1294,23 @@
   }
   .section-intro .content p span {
     color: #8EB359;
+  }
+  .section-intro .content .btn-signout {
+    width: 120px;
+    height: 40px;
+    background-color: transparent;
+    border-radius: 20px;
+    color: #8EB359;
+    border: 1px solid #8EB359;
+    cursor: pointer;
+    -webkit-transition: 300ms;
+    transition: 300ms;
+  }
+  .section-intro .content .btn-signout:hover {
+    -webkit-transition: 300ms;
+    transition: 300ms;
+    background-color: #8EB359;
+    color: white;
   }
   .about-story {
     height: 900px;
