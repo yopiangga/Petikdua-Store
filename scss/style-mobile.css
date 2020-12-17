@@ -144,7 +144,6 @@
     padding-top: 110px;
     z-index: 888;
     top: 0;
-    bottom: 0;
     left: 0;
     right: 0;
   }
@@ -1700,6 +1699,7 @@
         flex-wrap: wrap;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    padding-bottom: 120px;
   }
   .products-product .content .body .produk {
     margin-bottom: 30px;

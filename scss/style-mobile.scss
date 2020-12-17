@@ -138,7 +138,6 @@
                 padding-top: 110px;
                 z-index: 888;
                 top: 0;
-                bottom: 0;
                 left: 0;
                 right: 0;
 
@@ -154,7 +153,6 @@
 
                     li {
                         height: 50px;
-                        // border-bottom: 1px solid black;
                         display: flex;
                         align-items: center;
 
@@ -1503,6 +1501,7 @@
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-around;
+                padding-bottom: 120px;
 
                 .produk {
                     margin-bottom: 30px;

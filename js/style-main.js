@@ -2,8 +2,12 @@
 $(document).ready(function(){
 
     $('.btn-menu').click(function(){
-        $('.menu').toggleClass('active');
+        $('nav .menu').toggleClass('active');
         
+    });
+
+    $('section').click(function(){
+        $('nav .menu').removeClass('active');
     });
 
 
@@ -46,7 +50,7 @@ $(document).ready(function(){
         $('.home-product .content .title .button .btn-all').addClass('active');
         $('.home-product .content .title .button .btn-fruits').removeClass('active');
         $('.home-product .content .title .button .btn-vegetables').removeClass('active');
-        $('.home-product .content .title .button .btn-garlic').removeClass('active');
+        $('.home-product .content .title .button .btn-garlics').removeClass('active');
         $('.home-product .content .title .button .btn-seafoods').removeClass('active');
         $('.home-product .content .title .button .btn-meets').removeClass('active');
     });
@@ -61,7 +65,7 @@ $(document).ready(function(){
         $('.home-product .content .title .button .btn-all').removeClass('active');
         $('.home-product .content .title .button .btn-fruits').addClass('active');
         $('.home-product .content .title .button .btn-vegetables').removeClass('active');
-        $('.home-product .content .title .button .btn-garlic').removeClass('active');
+        $('.home-product .content .title .button .btn-garlics').removeClass('active');
         $('.home-product .content .title .button .btn-seafoods').removeClass('active');
         $('.home-product .content .title .button .btn-meets').removeClass('active');
     });
@@ -76,7 +80,7 @@ $(document).ready(function(){
         $('.home-product .content .title .button .btn-all').removeClass('active');
         $('.home-product .content .title .button .btn-fruits').removeClass('active');
         $('.home-product .content .title .button .btn-vegetables').addClass('active');
-        $('.home-product .content .title .button .btn-garlic').removeClass('active');
+        $('.home-product .content .title .button .btn-garlics').removeClass('active');
         $('.home-product .content .title .button .btn-seafoods').removeClass('active');
         $('.home-product .content .title .button .btn-meets').removeClass('active');
     });
@@ -91,7 +95,7 @@ $(document).ready(function(){
         $('.home-product .content .title .button .btn-all').removeClass('active');
         $('.home-product .content .title .button .btn-fruits').removeClass('active');
         $('.home-product .content .title .button .btn-vegetables').removeClass('active');
-        $('.home-product .content .title .button .btn-garlic').addClass('active');
+        $('.home-product .content .title .button .btn-garlics').addClass('active');
         $('.home-product .content .title .button .btn-seafoods').removeClass('active');
         $('.home-product .content .title .button .btn-meets').removeClass('active');
     });
@@ -106,7 +110,7 @@ $(document).ready(function(){
         $('.home-product .content .title .button .btn-all').removeClass('active');
         $('.home-product .content .title .button .btn-fruits').removeClass('active');
         $('.home-product .content .title .button .btn-vegetables').removeClass('active');
-        $('.home-product .content .title .button .btn-garlic').removeClass('active');
+        $('.home-product .content .title .button .btn-garlics').removeClass('active');
         $('.home-product .content .title .button .btn-seafoods').addClass('active');
         $('.home-product .content .title .button .btn-meets').removeClass('active');
     });
@@ -121,7 +125,7 @@ $(document).ready(function(){
         $('.home-product .content .title .button .btn-all').removeClass('active');
         $('.home-product .content .title .button .btn-fruits').removeClass('active');
         $('.home-product .content .title .button .btn-vegetables').removeClass('active');
-        $('.home-product .content .title .button .btn-garlic').removeClass('active');
+        $('.home-product .content .title .button .btn-garlics').removeClass('active');
         $('.home-product .content .title .button .btn-seafoods').removeClass('active');
         $('.home-product .content .title .button .btn-meets').addClass('active');
     });
@@ -147,7 +151,7 @@ $(document).ready(function(){
         $('.products-product .content .title .button .btn-all').addClass('active');
         $('.products-product .content .title .button .btn-fruits').removeClass('active');
         $('.products-product .content .title .button .btn-vegetables').removeClass('active');
-        $('.products-product .content .title .button .btn-garlic').removeClass('active');
+        $('.products-product .content .title .button .btn-garlics').removeClass('active');
         $('.products-product .content .title .button .btn-seafoods').removeClass('active');
         $('.products-product .content .title .button .btn-meets').removeClass('active');
     });
@@ -162,7 +166,7 @@ $(document).ready(function(){
         $('.products-product .content .title .button .btn-all').removeClass('active');
         $('.products-product .content .title .button .btn-fruits').addClass('active');
         $('.products-product .content .title .button .btn-vegetables').removeClass('active');
-        $('.products-product .content .title .button .btn-garlic').removeClass('active');
+        $('.products-product .content .title .button .btn-garlics').removeClass('active');
         $('.products-product .content .title .button .btn-seafoods').removeClass('active');
         $('.products-product .content .title .button .btn-meets').removeClass('active');
     });
@@ -177,7 +181,7 @@ $(document).ready(function(){
         $('.products-product .content .title .button .btn-all').removeClass('active');
         $('.products-product .content .title .button .btn-fruits').removeClass('active');
         $('.products-product .content .title .button .btn-vegetables').addClass('active');
-        $('.products-product .content .title .button .btn-garlic').removeClass('active');
+        $('.products-product .content .title .button .btn-garlics').removeClass('active');
         $('.products-product .content .title .button .btn-seafoods').removeClass('active');
         $('.products-product .content .title .button .btn-meets').removeClass('active');
     });
@@ -192,7 +196,7 @@ $(document).ready(function(){
         $('.products-product .content .title .button .btn-all').removeClass('active');
         $('.products-product .content .title .button .btn-fruits').removeClass('active');
         $('.products-product .content .title .button .btn-vegetables').removeClass('active');
-        $('.products-product .content .title .button .btn-garlic').addClass('active');
+        $('.products-product .content .title .button .btn-garlics').addClass('active');
         $('.products-product .content .title .button .btn-seafoods').removeClass('active');
         $('.products-product .content .title .button .btn-meets').removeClass('active');
     });
@@ -207,7 +211,7 @@ $(document).ready(function(){
         $('.products-product .content .title .button .btn-all').removeClass('active');
         $('.products-product .content .title .button .btn-fruits').removeClass('active');
         $('.products-product .content .title .button .btn-vegetables').removeClass('active');
-        $('.products-product .content .title .button .btn-garlic').removeClass('active');
+        $('.products-product .content .title .button .btn-garlics').removeClass('active');
         $('.products-product .content .title .button .btn-seafoods').addClass('active');
         $('.products-product .content .title .button .btn-meets').removeClass('active');
     });
@@ -222,7 +226,7 @@ $(document).ready(function(){
         $('.products-product .content .title .button .btn-all').removeClass('active');
         $('.products-product .content .title .button .btn-fruits').removeClass('active');
         $('.products-product .content .title .button .btn-vegetables').removeClass('active');
-        $('.products-product .content .title .button .btn-garlic').removeClass('active');
+        $('.products-product .content .title .button .btn-garlics').removeClass('active');
         $('.products-product .content .title .button .btn-seafoods').removeClass('active');
         $('.products-product .content .title .button .btn-meets').addClass('active');
     });

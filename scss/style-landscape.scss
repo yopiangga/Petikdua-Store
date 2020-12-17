@@ -130,7 +130,6 @@ nav {
             padding-top: 110px;
             z-index: 888;
             top: 0;
-            bottom: 0;
             left: 0;
             right: 0;
             ul {
@@ -1374,6 +1373,7 @@ nav {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
+            padding-bottom: 120px;
             .produk {
                 margin-bottom: 30px;
                 border: 1px solid rgba($color-gray, 0.3);
