@@ -1,7 +1,28 @@
 @media only screen and (min-width: 1024px) {
   @font-face {
     font-family: "Poppins";
-    src: url("../font/poppins/Poppins-Regular.ttf");
+    src: url("../fonts/poppins/Poppins-Regular.ttf");
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: "Poppins";
+    src: url("../fonts/poppins/Poppins-Medium.ttf");
+    font-weight: 500;
+  }
+  @font-face {
+    font-family: "Poppins";
+    src: url("../fonts/poppins/Poppins-SemiBold.ttf");
+    font-weight: 600;
+  }
+  @font-face {
+    font-family: "Poppins";
+    src: url("../fonts/poppins/Poppins-Bold.ttf");
+    font-weight: 700;
+  }
+  @font-face {
+    font-family: "Poppins";
+    src: url("../fonts/poppins/Poppins-Italic.ttf");
+    font-style: italic;
   }
   body {
     font-family: "Poppins";
@@ -942,10 +963,12 @@
     font-size: 26px;
     font-weight: 600;
     margin-bottom: 20px;
+    line-height: 32px;
   }
   .home-blog .content .body .blog-left .card-blog .blog-body p {
     font-size: 14px;
     margin-bottom: 20px;
+    line-height: 28px;
   }
   .home-blog .content .body .blog-left .card-blog .blog-body h4 {
     color: #8EB359;
@@ -1004,10 +1027,12 @@
     font-weight: 500;
     margin-bottom: 18px;
     color: #333333;
+    line-height: 28px;
   }
   .home-blog .content .body .blog-right .card-blog .blog-body p {
     font-size: 14px;
     margin-bottom: 15px;
+    line-height: 28px;
   }
   .home-blog .content .body .blog-right .card-blog .blog-body h4 {
     color: #8EB359;
@@ -1990,6 +2015,7 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    background-size: cover;
   }
   .sign-in-sign-up .content {
     width: 70%;
@@ -2147,16 +2173,16 @@
     padding: 12px 20px 12px 20px;
     border-radius: 40px;
     border: 1px solid #8EB359;
-    background-color: white;
-    color: #8EB359;
+    background-color: #8EB359;
+    color: white;
     cursor: pointer;
     -webkit-transition: 0.2s;
     transition: 0.2s;
     width: 200px;
   }
   .sign-in-sign-up .content .content-left .sign-in form .btn-sign-in:hover {
-    background-color: #8EB359;
-    color: white;
+    background-color: white;
+    color: #8EB359;
     -webkit-transition: 0.2s;
     transition: 0.2s;
   }
@@ -2171,7 +2197,9 @@
     -webkit-transition: 1500ms;
     transition: 1500ms;
     height: 100%;
-    background-color: #8EB359;
+    background-image: url("../images/bg-signin.png");
+    background-size: cover;
+    background-position: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2216,7 +2244,7 @@
     padding: 12px 20px 12px 20px;
     border-radius: 40px;
     border: 1px solid white;
-    background-color: #8EB359;
+    background-color: transparent;
     color: white;
     cursor: pointer;
     -webkit-transition: 0.2s;
@@ -2226,6 +2254,7 @@
   .sign-in-sign-up .content .content-right .sign-up .btn-sign-up:hover {
     background-color: white;
     color: #8EB359;
+    border: 1px solid white;
     -webkit-transition: 0.2s;
     transition: 0.2s;
   }
@@ -2240,15 +2269,21 @@
     height: 100%;
     -webkit-transition: 1000ms;
     transition: 1000ms;
-    background-color: #8EB359;
+    background-color: white;
   }
   .sign-in-sign-up .content.active .content-left .logo {
-    display: none;
-  }
-  .sign-in-sign-up .content.active .content-left .logo-light {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-bottom: 30px;
+    position: fixed;
+    top: 90px;
+  }
+  .sign-in-sign-up .content.active .content-left .logo img {
+    width: 120px;
+  }
+  .sign-in-sign-up .content.active .content-left .logo-light {
+    display: none;
     margin-bottom: 30px;
     position: fixed;
     top: 90px;
@@ -2262,7 +2297,7 @@
   .sign-in-sign-up .content.active .content-left .sign-in-2 {
     width: 100%;
     height: 100%;
-    color: white;
+    color: #333333;
     text-align: center;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2283,6 +2318,9 @@
     font-weight: 500;
     margin-bottom: 30px;
   }
+  .sign-in-sign-up .content.active .content-left .sign-in-2 h1 span {
+    color: #8EB359;
+  }
   .sign-in-sign-up .content.active .content-left .sign-in-2 p {
     margin-bottom: 30px;
     width: 300px;
@@ -2291,17 +2329,17 @@
   .sign-in-sign-up .content.active .content-left .sign-in-2 .btn-sign-in {
     padding: 12px 20px 12px 20px;
     border-radius: 40px;
-    border: 1px solid white;
-    background-color: #8EB359;
-    color: white;
+    border: 1px solid #8EB359;
+    background-color: white;
+    color: #8EB359;
     cursor: pointer;
     -webkit-transition: 0.2s;
     transition: 0.2s;
     width: 200px;
   }
   .sign-in-sign-up .content.active .content-left .sign-in-2 .btn-sign-in:hover {
-    background-color: white;
-    color: #8EB359;
+    background-color: #8EB359;
+    color: white;
     -webkit-transition: 0.2s;
     transition: 0.2s;
   }
@@ -2329,6 +2367,7 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    color: white;
   }
   .sign-in-sign-up .content.active .content-right .sign-up-2 h1 {
     font-size: 28px;
@@ -2336,7 +2375,7 @@
     margin-bottom: 30px;
   }
   .sign-in-sign-up .content.active .content-right .sign-up-2 h1 span {
-    color: #8EB359;
+    color: white;
   }
   .sign-in-sign-up .content.active .content-right .sign-up-2 .media-sosial {
     display: -webkit-box;
@@ -2429,18 +2468,19 @@
     padding: 12px 20px 12px 20px;
     border-radius: 40px;
     border: 1px solid #8EB359;
-    background-color: white;
-    color: #8EB359;
+    background-color: #8EB359;
+    color: white;
     cursor: pointer;
     -webkit-transition: 0.2s;
     transition: 0.2s;
     width: 200px;
   }
   .sign-in-sign-up .content.active .content-right .sign-up-2 form .btn-sign-up:hover {
-    background-color: #8EB359;
+    background-color: transparent;
     color: white;
     -webkit-transition: 0.2s;
     transition: 0.2s;
+    border: 1px solid white;
   }
   .sign-in-sign-up .content.active .content-right .sign-up-2 form .btn-sign-up:focus {
     outline: none;
@@ -3162,7 +3202,7 @@
   }
   .blog-detail .content .left .information {
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
   .blog-detail .content .left .information ul {
     display: -webkit-box;
@@ -3199,6 +3239,7 @@
     font-size: 22px;
     font-weight: 600;
     margin-bottom: 25px;
+    margin-top: 40px;
   }
   .blog-detail .content .left .main-content .img-content {
     display: -webkit-box;
@@ -3240,7 +3281,7 @@
         -ms-flex-align: center;
             align-items: center;
     margin-bottom: 50px;
-    height: 120px;
+    height: 150px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     padding: 0px 25px 0px 25px;
@@ -3255,6 +3296,7 @@
   }
   .blog-detail .content .left .main-footer .tag h4 {
     margin-left: 10px;
+    line-height: 28px;
   }
   .blog-detail .content .left .main-footer .media-sosial {
     display: -webkit-box;
@@ -3427,7 +3469,6 @@
   .blog-detail .content .right .popular-post-bar .card-blog {
     cursor: pointer;
     width: 100%;
-    height: 150px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3464,10 +3505,12 @@
     font-weight: 500;
     margin-bottom: 18px;
     color: #333333;
+    line-height: 32px;
   }
   .blog-detail .content .right .popular-post-bar .card-blog .blog-body p {
     font-size: 14px;
     margin-bottom: 15px;
+    line-height: 28px;
   }
   .blog-detail .content .right .popular-post-bar .card-blog .blog-body h4 {
     color: #8EB359;
@@ -3514,7 +3557,6 @@
   .blog-detail .content .right .recent-post-bar .card-blog {
     cursor: pointer;
     width: 100%;
-    height: 150px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3551,10 +3593,12 @@
     font-weight: 500;
     margin-bottom: 18px;
     color: #333333;
+    line-height: 32px;
   }
   .blog-detail .content .right .recent-post-bar .card-blog .blog-body p {
     font-size: 14px;
     margin-bottom: 15px;
+    line-height: 28px;
   }
   .blog-detail .content .right .recent-post-bar .card-blog .blog-body h4 {
     color: #8EB359;

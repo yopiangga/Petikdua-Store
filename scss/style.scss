@@ -2,7 +2,32 @@
 
     @font-face {
         font-family: "Poppins";
-        src: url('../font/poppins/Poppins-Regular.ttf');
+        src: url('../fonts/poppins/Poppins-Regular.ttf');
+        font-weight: 400;
+    }
+
+    @font-face {
+        font-family: "Poppins";
+        src: url('../fonts/poppins/Poppins-Medium.ttf');
+        font-weight: 500;
+    }
+
+    @font-face {
+        font-family: "Poppins";
+        src: url('../fonts/poppins/Poppins-SemiBold.ttf');
+        font-weight: 600;
+    }
+
+    @font-face {
+        font-family: "Poppins";
+        src: url('../fonts/poppins/Poppins-Bold.ttf');
+        font-weight: 700;
+    }
+
+    @font-face {
+        font-family: "Poppins";
+        src: url('../fonts/poppins/Poppins-Italic.ttf');
+        font-style: italic;
     }
 
     $color-primary : #8EB359;
@@ -861,11 +886,13 @@
                                 font-size: 26px;
                                 font-weight: 600;
                                 margin-bottom: 20px;
+                                line-height: 32px;
                             }
 
                             p {
                                 font-size: 14px;
                                 margin-bottom: 20px;
+                                line-height: 28px;
                             }
 
                             h4 {
@@ -928,11 +955,13 @@
                                 font-weight: 500;
                                 margin-bottom: 18px;
                                 color: $color-secondary;
+                                line-height: 28px;
                             }
 
                             p {
                                 font-size: 14px;
                                 margin-bottom: 15px;
+                                line-height: 28px;
                             }
 
                             h4 {
@@ -1827,6 +1856,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        // background-image: url('../images/product-detail-1.png');
+        background-size: cover;
+
 
         .content {
             width: 70%;
@@ -1953,16 +1985,16 @@
                             padding: 12px 20px 12px 20px;
                             border-radius: 40px;
                             border: 1px solid $color-primary;
-                            background-color: white;
-                            color: $color-primary;
+                            background-color: $color-primary;
+                            color: white;
                             cursor: pointer;
                             transition: 0.2s;
                             width: 200px;
                         }
 
                         .btn-sign-in:hover {
-                            background-color: $color-primary;
-                            color: white;
+                            background-color: white;
+                            color: $color-primary;
                             transition: 0.2s;
                         }
 
@@ -1981,7 +2013,10 @@
                 width: 35%;
                 transition: 1500ms;
                 height: 100%;
-                background-color: $color-primary;
+                // background-color: $color-primary;
+                background-image: url('../images/bg-signin.png');
+                background-size: cover;
+                background-position: center;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -1989,7 +2024,7 @@
 
                 .sign-up {
                     width: 100%;
-                    height: 250px;
+                    height: 250px;  
                     color: white;
                     text-align: center;
                     display: flex;
@@ -2013,7 +2048,7 @@
                         padding: 12px 20px 12px 20px;
                         border-radius: 40px;
                         border: 1px solid white;
-                        background-color: $color-primary;
+                        background-color: transparent;
                         color: white;
                         cursor: pointer;
                         transition: 0.2s;
@@ -2023,6 +2058,7 @@
                     .btn-sign-up:hover {
                         background-color: white;
                         color: $color-primary;
+                        border: 1px solid white;
                         transition: 0.2s;
                     }
 
@@ -2047,14 +2083,21 @@
                 width: 35%;
                 height: 100%;
                 transition: 1000ms;
-                background-color: $color-primary;
+                background-color: white;
 
                 .logo {
-                    display: none;
+                    display: flex;
+                    margin-bottom: 30px;
+                    position: fixed;
+                    top: 90px;
+
+                    img {
+                        width: 120px;
+                    }
                 }
 
                 .logo-light {
-                    display: flex;
+                    display: none;
                     margin-bottom: 30px;
                     position: fixed;
                     top: 90px;
@@ -2071,7 +2114,7 @@
                 .sign-in-2 {
                     width: 100%;
                     height: 100%;
-                    color: white;
+                    color: $color-secondary;
                     text-align: center;
                     display: flex;
                     flex-direction: column;
@@ -2082,6 +2125,10 @@
                         font-size: 28px;
                         font-weight: 500;
                         margin-bottom: 30px;
+
+                        span {
+                            color: $color-primary;
+                        }
                     }
 
                     p {
@@ -2093,17 +2140,17 @@
                     .btn-sign-in {
                         padding: 12px 20px 12px 20px;
                         border-radius: 40px;
-                        border: 1px solid white;
-                        background-color: $color-primary;
-                        color: white;
+                        border: 1px solid $color-primary    ;
+                        background-color: white;
+                        color: $color-primary;
                         cursor: pointer;
                         transition: 0.2s;
                         width: 200px;
                     }
 
                     .btn-sign-in:hover {
-                        background-color: white;
-                        color: $color-primary;
+                        background-color: $color-primary;
+                        color: white;
                         transition: 0.2s;
                     }
 
@@ -2127,6 +2174,7 @@
                     display: flex;
                     flex-direction: column;
                     align-items: center;
+                    color: white;
 
                     h1 {
                         font-size: 28px;
@@ -2134,7 +2182,7 @@
                         margin-bottom: 30px;
 
                         span {
-                            color: $color-primary;
+                            color: white;
                         }
                     }
 
@@ -2213,17 +2261,18 @@
                             padding: 12px 20px 12px 20px;
                             border-radius: 40px;
                             border: 1px solid $color-primary;
-                            background-color: white;
-                            color: $color-primary;
+                            background-color: $color-primary;
+                            color: white;
                             cursor: pointer;
                             transition: 0.2s;
                             width: 200px;
                         }
 
                         .btn-sign-up:hover {
-                            background-color: $color-primary;
+                            background-color: transparent;
                             color: white;
                             transition: 0.2s;
+                            border: 1px solid white;
                         }
 
                         .btn-sign-up:focus {
@@ -2943,7 +2992,7 @@
 
                 .information {
                     width: 100%;
-                    margin-bottom: 30px;
+                    margin-bottom: 50px;
                     ul {
                         display: flex;
                         align-items: center;
@@ -2975,6 +3024,7 @@
                         font-size: 22px;
                         font-weight: 600;
                         margin-bottom: 25px;
+                        margin-top: 40px;
                     }
 
                     .img-content {
@@ -3009,7 +3059,7 @@
                     justify-content: space-between;
                     align-items: center;
                     margin-bottom: 50px;
-                    height: 120px;
+                    height: 150px;
                     box-sizing: border-box;
                     padding: 0px 25px 0px 25px;
                     .tag {
@@ -3017,6 +3067,7 @@
                         align-items: center;
                         h4 {
                             margin-left: 10px;
+                            line-height: 28px;
                         }
                     }
                     .media-sosial {
@@ -3199,7 +3250,6 @@
                     .card-blog {
                         cursor: pointer;
                         width: 100%;
-                        height: 150px;
                         display: flex;
                         margin-bottom: 80px;
 
@@ -3231,11 +3281,13 @@
                                 font-weight: 500;
                                 margin-bottom: 18px;
                                 color: $color-secondary;
+                                line-height: 32px;
                             }
 
                             p {
                                 font-size: 14px;
                                 margin-bottom: 15px;
+                                line-height: 28px;
                             }
 
                             h4 {
@@ -3296,7 +3348,6 @@
                     .card-blog {
                         cursor: pointer;
                         width: 100%;
-                        height: 150px;
                         display: flex;
                         margin-bottom: 80px;
 
@@ -3328,11 +3379,13 @@
                                 font-weight: 500;
                                 margin-bottom: 18px;
                                 color: $color-secondary;
+                                line-height: 32px;
                             }
 
                             p {
                                 font-size: 14px;
                                 margin-bottom: 15px;
+                                line-height: 28px;
                             }
 
                             h4 {

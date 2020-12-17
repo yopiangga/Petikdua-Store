@@ -3,7 +3,32 @@
 
     @font-face {
         font-family: "Poppins";
-        src: url('../font/poppins/Poppins-Regular.ttf');
+        src: url('../fonts/poppins/Poppins-Regular.ttf');
+        font-weight: 400;
+    }
+
+    @font-face {
+        font-family: "Poppins";
+        src: url('../fonts/poppins/Poppins-Medium.ttf');
+        font-weight: 500;
+    }
+
+    @font-face {
+        font-family: "Poppins";
+        src: url('../fonts/poppins/Poppins-SemiBold.ttf');
+        font-weight: 600;
+    }
+
+    @font-face {
+        font-family: "Poppins";
+        src: url('../fonts/poppins/Poppins-Bold.ttf');
+        font-weight: 700;
+    }
+
+    @font-face {
+        font-family: "Poppins";
+        src: url('../fonts/poppins/Poppins-Italic.ttf');
+        font-style: italic;
     }
 
 $color-primary  : #8EB359;
@@ -825,10 +850,12 @@ nav {
                             font-size: 26px;
                             font-weight: 600;
                             margin-bottom: 20px;
+                            line-height: 32px;
                         }
                         p{
                             font-size: 14px;
                             margin-bottom: 20px;
+                            line-height: 28px;
                         }
                         h4 {
                             color: $color-primary;
@@ -847,7 +874,6 @@ nav {
                 align-items: center;
                 .card-blog {
                     width: 90%;
-                    height: 150px;
                     display: flex;
                     margin-bottom: 40px;
                     .blog-img {
@@ -872,10 +898,12 @@ nav {
                             font-size: 18px;
                             font-weight: 600;
                             margin-bottom: 18px;
+                            line-height: 32px;
                         }
                         p{
                             font-size: 14px;
                             margin-bottom: 15px;
+                            line-height: 28px;
                         }
                         h4 {
                             color: $color-primary;
@@ -1721,30 +1749,34 @@ nav {
 
 .sign-in-sign-up {
     width: 100%;
+    height: 550px;
     display: flex;
     justify-content: center;
     align-items: center;
+    // background-image: url('../images/product-detail-1.png');
+    background-size: cover;
+
 
     .content {
-        width: 100%;
+        width: 95%;
+        height: 500px;
         background-color: white;
+        border-radius: 20px;
         box-shadow: 0px 0px 30px rgba($color: $color-secondary, $alpha: 0.15);
         display: flex;
-        flex-direction: column;
         overflow: hidden;
         color: $color-secondary;
 
         .content-left {
-            width: 100%;
-            // transition: 1500ms;
-            min-height: 660px;
-            padding: 10px;
+            width: 65%;
+            transition: 1500ms;
+            height: 100%;
+            padding: 20px;
             display: flex;
             flex-direction: column;
-            box-sizing: border-box;
 
             .logo {
-                margin-bottom: 70px;
+                margin-bottom: 30px;
                 display: flex;
 
                 img {
@@ -1847,16 +1879,16 @@ nav {
                         padding: 12px 20px 12px 20px;
                         border-radius: 40px;
                         border: 1px solid $color-primary;
-                        background-color: white;
-                        color: $color-primary;
+                        background-color: $color-primary;
+                        color: white;
                         cursor: pointer;
                         transition: 0.2s;
                         width: 200px;
                     }
 
                     .btn-sign-in:hover {
-                        background-color: $color-primary;
-                        color: white;
+                        background-color: white;
+                        color: $color-primary;
                         transition: 0.2s;
                     }
 
@@ -1872,19 +1904,21 @@ nav {
         }
 
         .content-right {
-            width: 100%;
+            width: 35%;
             transition: 1500ms;
             height: 100%;
-            background-color: $color-primary;
+            // background-color: $color-primary;
+            background-image: url('../images/bg-signin.png');
+            background-size: cover;
+            background-position: center;
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 10px;
-            box-sizing: border-box;
+            padding: 20px;
 
             .sign-up {
                 width: 100%;
-                height: 250px;
+                height: 250px;  
                 color: white;
                 text-align: center;
                 display: flex;
@@ -1908,7 +1942,7 @@ nav {
                     padding: 12px 20px 12px 20px;
                     border-radius: 40px;
                     border: 1px solid white;
-                    background-color: $color-primary;
+                    background-color: transparent;
                     color: white;
                     cursor: pointer;
                     transition: 0.2s;
@@ -1918,6 +1952,7 @@ nav {
                 .btn-sign-up:hover {
                     background-color: white;
                     color: $color-primary;
+                    border: 1px solid white;
                     transition: 0.2s;
                 }
 
@@ -1937,19 +1972,27 @@ nav {
 
 
     .content.active {
-
+        
         .content-left {
-            min-height: 350px;
-            width: 100%;
-            background-color: $color-primary;
+            width: 35%;
+            height: 100%;
+            transition: 1000ms;
+            background-color: white;
 
             .logo {
-                display: none;
+                display: flex;
+                margin-bottom: 30px;
+
+                img {
+                    width: 120px;
+                }
             }
 
             .logo-light {
-                display: flex;
+                display: none;
                 margin-bottom: 30px;
+                position: fixed;
+                top: 90px;
 
                 img {
                     width: 120px;
@@ -1963,7 +2006,7 @@ nav {
             .sign-in-2 {
                 width: 100%;
                 height: 100%;
-                color: white;
+                color: $color-secondary;
                 text-align: center;
                 display: flex;
                 flex-direction: column;
@@ -1974,6 +2017,10 @@ nav {
                     font-size: 28px;
                     font-weight: 500;
                     margin-bottom: 30px;
+
+                    span {
+                        color: $color-primary;
+                    }
                 }
 
                 p {
@@ -1985,17 +2032,17 @@ nav {
                 .btn-sign-in {
                     padding: 12px 20px 12px 20px;
                     border-radius: 40px;
-                    border: 1px solid white;
-                    background-color: $color-primary;
-                    color: white;
+                    border: 1px solid $color-primary    ;
+                    background-color: white;
+                    color: $color-primary;
                     cursor: pointer;
                     transition: 0.2s;
                     width: 200px;
                 }
 
                 .btn-sign-in:hover {
-                    background-color: white;
-                    color: $color-primary;
+                    background-color: $color-primary;
+                    color: white;
                     transition: 0.2s;
                 }
 
@@ -2007,8 +2054,7 @@ nav {
 
         .content-right {
             transition: 1000ms;
-            width: 100%;
-            min-height: 650px;
+            width: 65%;
             background-color: white;
 
             .sign-up {
@@ -2020,16 +2066,15 @@ nav {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                color: white;
 
                 h1 {
                     font-size: 28px;
                     font-weight: 500;
                     margin-bottom: 30px;
-                    width: 80%;
-                    line-height: 36px;
 
                     span {
-                        color: $color-primary;
+                        color: white;
                     }
                 }
 
@@ -2108,18 +2153,18 @@ nav {
                         padding: 12px 20px 12px 20px;
                         border-radius: 40px;
                         border: 1px solid $color-primary;
-                        background-color: white;
-                        color: $color-primary;
+                        background-color: $color-primary;
+                        color: white;
                         cursor: pointer;
                         transition: 0.2s;
                         width: 200px;
-                        margin-top: 20px;
                     }
 
                     .btn-sign-up:hover {
-                        background-color: $color-primary;
+                        background-color: transparent;
                         color: white;
                         transition: 0.2s;
+                        border: 1px solid white;
                     }
 
                     .btn-sign-up:focus {
@@ -2130,9 +2175,6 @@ nav {
         }
     }
 }
-
-
-
 
 
 
@@ -2925,7 +2967,7 @@ nav {
                 justify-content: space-between;
                 align-items: center;
                 margin-bottom: 50px;
-                height: 120px;
+                height: 150px;
                 box-sizing: border-box;
                 padding: 20px 25px 20px 25px;
                 .tag {
@@ -2933,6 +2975,7 @@ nav {
                     align-items: center;
                     h4 {
                         margin-left: 10px;
+                        line-height: 28px;
                     }
                 }
                 .media-sosial {
@@ -3116,7 +3159,6 @@ nav {
                 .card-blog {
                     cursor: pointer;
                     width: 100%;
-                    height: 150px;
                     display: flex;
                     margin-bottom: 30px;
 
@@ -3148,11 +3190,13 @@ nav {
                             font-weight: 500;
                             margin-bottom: 18px;
                             color: $color-secondary;
+                            line-height: 32px;
                         }
 
                         p {
                             font-size: 14px;
                             margin-bottom: 15px;
+                            line-height: 28px;
                         }
 
                         h4 {
@@ -3213,7 +3257,6 @@ nav {
                 .card-blog {
                     cursor: pointer;
                     width: 100%;
-                    height: 150px;
                     display: flex;
                     margin-bottom: 30px;
 
@@ -3245,11 +3288,13 @@ nav {
                             font-weight: 500;
                             margin-bottom: 18px;
                             color: $color-secondary;
+                            line-height: 32px;
                         }
 
                         p {
                             font-size: 14px;
                             margin-bottom: 15px;
+                            line-height: 28px;
                         }
 
                         h4 {
